@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx} % Permette l'inserimento e gestione di immagini
+\usepackage[italian]{babel} % Permette di tradurre alcune keyword come "Contents" in italiano
+
+\title{DecKBuilder-CR}
+\author{Giovanni De Caro - Francesco Maistrini - Mauro Gorga}
+\date{Dicembre 2025}
+
+\begin{document}
+
+\maketitle
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{images/logo.png}
+\end{figure}
+\tableofcontents
+
+
+
+\section{Definizione del problema}
+\subsection{Introduzione}
+Il progetto Deck-BuilderCR nasce per ovviare al problema della costruzione di un deck in Clash Royale che consiste nel selezionare un insieme limitato di carte (8), a partire da un insieme molto ampio di possibilità (truppe/edifici/incantesimi), dove ognuna ha un proprio costo di elisir (che varia dall’1 al 9).
+
+La complessità del problema deriva dal fatto che lo spazio delle possibili combinazioni cresce in maniera combinatoria all’aumentare del numero di carte presenti nel gioco, e che la qualità del deck non dipende solo dalle singole carte, ma:
+
+\begin{itemize}
+  \item Dall’efficienza della combinazione tra le carte 
+  \item Dal costo medio dell’elisir del deck 
+  \item Dalla Diversificazione della tipologia delle carte (truppe/edifici/incantesimi)
+\end{itemize}
+
+A Dicembre 2025 Clash Royale mette a disposizione 121 carte in totale, per un numero di deck creabili pari a 899.749.479.915. Per questo motivo il problema non può essere risolto tramite ricerca esaustiva.
+
+\subsection{Obiettivi}
+L’obiettivo principale del progetto Deck-BuilderCR, è la creazione di un sistema di IA in grado di generare automaticamente deck ottimizzati per Clash Royale, rispettando vincoli strutturali imposti dall’utente e massimizzando una misura di qualità del deck in base a dei vincoli interni del programma.
+In particolare, il sistema deve:
+
+\begin{itemize}
+  \item Generare deck composti esattamente da 8 carte 
+  \item Garantire la coerenza del deck con dei vincoli selezionati dall’utente (tra quelli disponibili)
+  \item Rispettare vincoli imposti dal gioco e dal sistema
+  \item Massimizzare una funzione di valutazione che tenga conto della qualità complessiva del deck 
+  \item Fornire un output comprensibile all’utente finale tramite una dashboard che mostri il deck generato e ne spieghi le caratteristiche principali
+\end{itemize}
+
+\end{document}
