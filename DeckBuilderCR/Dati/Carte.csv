@@ -1,0 +1,109 @@
+﻿nome;danno_s;punti_vita;costo;volante;tipologia;velocita;portata;tipo_bersaglio;effetti_aggiuntivi
+Spirito elletrico;99;230;1;False;truppa;3;True;False;1
+Spirito del fuoco;207;230;1;False;truppa;3;True;False;0
+Spirito della cura;110;230;1;False;truppa;3;True;False;1
+Spirito del ghiaccio;110;230;1;False;truppa;3;True;False;1
+Scheletri;231;243;1;False;truppa;2;False;False;0
+Specchio;;;;;incantesimo;;;;1
+Pipistrelli;310;405;2;True;truppa;3;True;False;0
+Berserker;170;896;2;False;truppa;2;False;False;0
+Bombarolo;125;304;2;False;truppa;1;False;False;1
+Goblin;436;808;2;False;truppa;3;False;False;0
+Goblin lancieri;399;399;2;False;truppa;3;True;False;0
+Golem del ghiaccio;33;1315;2;False;truppa;0;False;True;1
+Cespuglio sospetto;182;689;2;False;truppa;1;False;True;0
+Spaccamuro;700;660;2;False;truppa;3;False;True;0
+Barile Barbarico;115;;2;;incantesimo;;;;1
+Palla di neve gigante;116;;2;;incantesimo;;;;2
+Maledizione goblin;135;;2;;incantesimo;;;;1
+Furia;116;;2;;incantesimo;;;;2
+Tronco;156;;2;;incantesimo;;;;1
+Scarica;125;;2;;incantesimo;;;;1
+Arcieri;248;608;3;False;truppa;1;True;False;0
+Fuorilegge;194;906;3;False;truppa;2;False;False;1
+Goblin cerbottaniere;195;261;3;False;truppa;3;True;False;0
+Principessa;56;261;3;False;truppa;1;True;False;2
+Golem di elisir;230;1589;3;False;truppa;0;False;True;1
+Arciere pirotecnico;106;304;3;False;truppa;2;True;False;1
+Pescatore;149;870;3;False;truppa;1;False;False;1
+Gang di goblin;468;1005;3;False;truppa;2;True;False;0
+Guardie;351;1011;3;False;truppa;2;False;False;0
+Stregone di ghiaccio;52;688;3;False;truppa;1;True;False;2
+Cavaliere;168;1766;3;False;truppa;1;False;False;0
+Megasgherro;207;837;3;True;truppa;1;True;False;0
+Minatore;100;1210;3;False;truppa;2;False;False;1
+Sgherri;291;690;3;True;truppa;2;True;False;0
+Fantasma royale;145;1210;3;False;truppa;2;False;False;1
+Orda di scheletri;511;1215;3;False;truppa;2;False;False;0
+Barile d'ossa;511;1099;3;True;truppa;2;False;True;0
+Cannone;212;824;3;False;edificio;;False;False;0
+Frecce;366;;3;;incantesimo;;;;1
+Terremoto;201;;3;;incantesimo;;;;1
+Consegna royale;218;;3;;incantesimo;;;;1
+Tornado;55;;3;;incantesimo;;;;2
+Groviglio;191;;3;;incantesimo;;;;1
+Vuoto;332;;3;;incantesimo;;;;0
+Cucciolo di drago;107;1152;4;True;truppa;2;True;False;1
+Guaitrice guerriera;98;1717;4;False;truppa;1;False;False;1
+Ariete da battaglia;543;1588;4;False;truppa;1;False;True;0
+Principe nero;204;1440;4;False;truppa;1;False;False;1
+Stregone elletrico;124;714;4;False;truppa;2;True;False;1
+Macchina volante;155;614;4;True;truppa;2;True;False;0
+Fornace;99;727;4;False;truppa;1;True;False;1
+Goblin demolitore;169;1300;4;False;truppa;1;False;True;1
+Domatore di cinghiali;198;1697;4;False;truppa;3;False;False;0
+Cacciatore;381;885;4;False;truppa;1;True;False;0
+Drago infernale;409;1295;4;True;truppa;1;True;False;0
+Boscaiolo;320;1282;4;False;truppa;3;False;False;1
+Arciere magico;130;529;4;False;truppa;1;True;False;2
+Mini pekka;471;1433;4;False;truppa;2;False;False;0
+Strega madre;133;529;4;False;truppa;1;True;False;2
+Moschettiere;271;721;4;False;truppa;1;True;False;0
+Gabbia per  goblin;306;1080;4;False;edificio;2;False;False;0
+Strega notturna;241;906;4;False;truppa;1;False;False;1
+Fenice;217;1052;4;True;truppa;1;True;False;1
+Gigantessa delle rune;80;2662;4;False;truppa;0;False;True;1
+Draghi d'ossa;168;1120;4;True;truppa;2;True;False;1
+Valchiria;177;1907;4;False;truppa;1;False;False;1
+Scariccucioli;165;1587;4;True;truppa;1;True;False;1
+Torre bombardiera;138;1356;4;False;edificio;;False;False;1
+Mortaio;53;1369;4;False;edificio;;False;False;0
+Tesla;200;1152;4;False;edificio;;True;False;0
+Trivella goblin;26;1313;4;False;edificio;;False;False;2
+Capanna goblin;0;1180;4;;edificio;;False;False;2
+Palla di fuoco;437;;4;;incantesimo;;;;0
+Congelamento;91;;4;;incantesimo;;;;2
+Veleno;460;;4;;incantesimo;;;;1
+Mongolfiera;320;1679;5;True;truppa;1;False;True;0
+Barbari;294;3350;5;False;truppa;1;False;False;0
+Bocciatore;115;2081;5;False;truppa;0;False;False;1
+Cannoe a rotelle;236;1809;5;False;truppa;1;False;False;1
+Drago elletrico;91;949;5;True;truppa;1;True;False;2
+Boia;140;1280;5;False;truppa;1;True;False;1
+Gigante ;160;4090;5;False;truppa;0;False;True;0
+Macchina goblin;260;2185;5;False;truppa;1;False;False;0
+Orda di sgherri;485;1150;5;True;truppa;2;True;False;0
+Principe;279;1920;5;False;truppa;1;False;False;1
+Domatrice di arieti;147;1697;5;False;truppa;1;True;True;1
+Mascalzoni;394;2462;5;False;truppa;1;True;False;0
+Maiali royale;244;3348;5;False;truppa;3;False;True;0
+Strega;122;839;5;False;truppa;1;True;False;1
+Stregone;200;755;5;False;truppa;1;True;False;1
+Torre infernale;777;1748;5;False;edificio;;True;False;0
+Barbari elite;548;2682;6;False;truppa;2;False;False;0
+Gigante scheletro;197;3617;6;False;truppa;1;False;False;1
+Gigante royale;180;3164;6;False;truppa;0;False;True;1
+Scintilla;332;1451;6;False;truppa;1;False;False;1
+Imperatrice degli spiriti;279;1244;6;True;truppa;1;True;False;1
+Arco x;143;1600;6;False;edificio;;False;False;1
+Capanna dei barbari;0;1164;6;False;edificio;;False;False;2
+Estrattore di elisir;0;1070;6;False;edificio;;False;False;2
+Fulmine;671;;6;;incantesimo;;;;1
+Razzo;927;;6;;incantesimo;;;;0
+Gigante elletrico;77;3885;7;False;truppa;0;True;True;2
+Gran cavaliere;157;3993;7;False;truppa;1;False;False;1
+Pekka;463;3760;7;False;truppa;0;False;False;0
+Reclute royale;612;4772;7;False;truppa;1;False;False;0
+Mastino lavico;40;3581;7;True;truppa;0;False;True;2
+Golem;124;5120;8;False;truppa;0;False;False;2
+Tre moschettieri;646;2649;9;False;truppa;1;True;False;0
