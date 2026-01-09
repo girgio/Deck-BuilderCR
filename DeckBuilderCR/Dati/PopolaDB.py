@@ -26,12 +26,16 @@ class PopolaDatabase:
                 if velocita_valore == '':  # Se il campo esiste ma è vuoto
                     velocita_valore = '-1'
 
+                costo_valore = row.get('costo', '-1')  # Prende il valore, se manca usa '-1'
+                if costo_valore == '':  # Se il campo esiste ma è vuoto
+                    costo_valore = '-1'
+
                 # Crea un'istanza della carta con i dati letti
                 carta = Carta(
                     nome=row['nome'],
                     danno_s=int(danno_valore),
                     punti_vita=int(vita_valore),
-                    costo=int(row['costo']),
+                    costo=int(costo_valore),
                     volante=row['volante'] == 'True',  # Converti la stringa 'True' in un booleano
                     tipologia=row['tipologia'],
                     velocita=int(velocita_valore),
