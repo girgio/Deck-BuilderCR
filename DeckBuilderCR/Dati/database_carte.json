@@ -1269,7 +1269,7 @@
         "velocita": 0,
         "portata": false,
         "tipo_bersaglio": true,
-        "effetti_aggiuntivi": 2
+        "effetti_aggiuntivi": 1
     },
     "Golem": {
         "nome": "Golem",
@@ -1281,7 +1281,7 @@
         "velocita": 0,
         "portata": false,
         "tipo_bersaglio": false,
-        "effetti_aggiuntivi": 2
+        "effetti_aggiuntivi": 1
     },
     "Tre moschettieri": {
         "nome": "Tre moschettieri",
