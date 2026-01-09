@@ -28,6 +28,19 @@ class Carta:
             'effetti_aggiuntivi': self.effetti_aggiuntivi
         }
 
+    def carta_da_dict(dati: dict):
+        return Carta(
+            nome=dati['nome'],
+            danno_s=dati['danno_s'],
+            punti_vita=dati['punti_vita'],
+            costo=dati['costo'],
+            volante=dati['volante'],
+            tipologia=dati['tipologia'],
+            velocita=dati['velocita'],
+            portata=dati['portata'],
+            tipo_bersaglio=dati['tipo_bersaglio'],
+            effetti_aggiuntivi=dati['effetti_aggiuntivi'])
+
     def __repr__(self):
         return f"Carta(nome={self.nome}, danno_s={self.danno_s}, punti_vita={self.punti_vita}, costo={self.costo}, volante={self.volante}, tipologia={self.tipologia}, velocita={self.velocita}, portata={self.portata}, tipo_bersaglio={self.tipo_bersaglio}, effetti_aggiuntivi={self.effetti_aggiuntivi})"
 
@@ -56,7 +69,7 @@ class DatabaseCarte:
 
     def get_carta(self, nome):
         # Restituisce la carta dal database dato il nome
-        return self.database.get(nome)
+        return Carta.carta_da_dict(self.database.get(nome))
 
     def mostra_database(self):
         # Mostra tutte le carte nel database
