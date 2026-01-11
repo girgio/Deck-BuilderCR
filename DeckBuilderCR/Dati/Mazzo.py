@@ -1,4 +1,4 @@
-from operator import truediv
+import math
 
 from Carta import Carta
 
@@ -125,3 +125,32 @@ class Mazzo:
             i += 1
 
         return True
+
+    def caclola_fitness(self):
+        atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.3) * (1+self.get_velocita_medio()*0.2)
+        dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.2) * (1+self.get_effetti()*0.1)
+        p = 0
+
+        if(self.get_costo_medio() > 3):
+            p += math.pow(self.get_costo_medio() - 3,3)
+
+        if(self.get_bersaglio()>2):
+            p += self.get_bersaglio()*3
+
+        if(self.get_portata() == 0):
+            p += 15
+
+        if(self.get_incantesimi()==0):
+            p += 12
+
+        if(self.get_volante()==0):
+            p += 10
+        elif(self.get_volante()>3):
+            p += 4
+
+        if(self.get_edifici()==0):
+            p += 5
+        elif(self.get_edifici()>2):
+            p += 12
+
+        return atk + dif - p
