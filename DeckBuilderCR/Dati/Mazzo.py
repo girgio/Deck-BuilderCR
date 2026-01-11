@@ -1,6 +1,7 @@
 import math
 
 from Carta import Carta
+from Carta import DatabaseCarte
 
 class Mazzo:
     def __init__(self,carte):
@@ -111,6 +112,7 @@ class Mazzo:
             tot += i.effetti_aggiuntivi
         return tot
 
+    #Controlla se il deck rispetta i vincoli
     def is_valido(self):
         l= len(self.carte)
         i = 0
@@ -154,3 +156,28 @@ class Mazzo:
             p += 12
 
         return atk + dif - p
+
+    #Restiuisce un nuovo mazzo a partire dal mazzo corrente, ma con nome_carta sostituito da nome_carta_sotitutiva, restituisce false se non trova la carta da sostituire
+    def sostituisci_carta(self,nome_carta,nome_carta_sostituiva):
+        db = DatabaseCarte()
+        carta_sostituiva = db.get_carta(nome_carta_sostituiva)
+        carte_deck = self.carte
+        nuovo_mazzo = self.carte.copy()
+        esito = False
+        i = 0
+
+        while(i < len(carte_deck) - 1):
+            if(carte_deck[i].nome==nome_carta):
+                carte_deck.remove(carte_deck[i])
+                esito = True
+                break;
+            i += 1
+
+        if(esito):
+            carte_deck.append(carta_sostituiva)
+        else:
+            return esito
+
+
+
+
