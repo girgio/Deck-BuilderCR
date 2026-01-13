@@ -157,7 +157,7 @@ class Mazzo:
 
         return atk + dif - p
 
-    #Restiuisce un nuovo mazzo a partire dal mazzo corrente, ma con nome_carta sostituito da nome_carta_sotitutiva, restituisce false se non trova la carta da sostituire
+    #Restiuisce un nuovo mazzo a partire dal mazzo corrente, ma con "nome_carta" sostituito da "nome_carta_sotitutiva", restituisce false se non trova la carta da sostituire
     def sostituisci_carta(self,nome_carta,nome_carta_sostituiva):
         db = DatabaseCarte()
         carta_sostituiva = db.get_carta(nome_carta_sostituiva)
@@ -168,15 +168,18 @@ class Mazzo:
 
         while(i < len(carte_deck) - 1):
             if(carte_deck[i].nome==nome_carta):
-                carte_deck.remove(carte_deck[i])
+                nuovo_mazzo.remove(carte_deck[i])
                 esito = True
                 break;
             i += 1
 
         if(esito):
-            carte_deck.append(carta_sostituiva)
+            nuovo_mazzo.append(carta_sostituiva)
+            return Mazzo(nuovo_mazzo)
         else:
             return esito
+
+
 
 
 
