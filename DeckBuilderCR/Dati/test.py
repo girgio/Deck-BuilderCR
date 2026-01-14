@@ -1,6 +1,5 @@
 from Mazzo import Mazzo
-from Carta import Carta
-from Carta import DatabaseCarte
+from DatabaseCarte import DatabaseCarte
 
 db = DatabaseCarte()
 carte1 = [db.get_carta("Cavaliere"),db.get_carta("Capanna goblin"),db.get_carta("Razzo"),db.get_carta("Scheletri"),db.get_carta("Minatore"),

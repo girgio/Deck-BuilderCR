@@ -1,7 +1,7 @@
 import math
 
 from Carta import Carta
-from Carta import DatabaseCarte
+from DatabaseCarte import DatabaseCarte
 
 class Mazzo:
     def __init__(self,carte):
