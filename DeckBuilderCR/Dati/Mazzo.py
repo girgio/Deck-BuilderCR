@@ -116,7 +116,7 @@ class Mazzo:
     def is_valido(self):
         l= len(self.carte)
         i = 0
-        if(self.get_incantesimi()>2):
+        if self.get_incantesimi()>2:
             return False
         while i< l - 1:
             j = i + 1
@@ -128,31 +128,31 @@ class Mazzo:
 
         return True
 
-    def caclola_fitness(self):
+    def calcola_fitness(self):
         atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.3) * (1+self.get_velocita_medio()*0.2)
         dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.2) * (1+self.get_effetti()*0.1)
         p = 0
 
-        if(self.get_costo_medio() > 3):
+        if self.get_costo_medio() > 3 :
             p += math.pow(self.get_costo_medio() - 3,3)
 
-        if(self.get_bersaglio()>2):
+        if self.get_bersaglio()>2 :
             p += self.get_bersaglio()*3
 
-        if(self.get_portata() == 0):
+        if self.get_portata() == 0:
             p += 15
 
-        if(self.get_incantesimi()==0):
+        if self.get_incantesimi()==0:
             p += 12
 
-        if(self.get_volante()==0):
+        if self.get_volante()==0:
             p += 10
-        elif(self.get_volante()>3):
+        elif self.get_volante()>3:
             p += 4
 
-        if(self.get_edifici()==0):
+        if self.get_edifici()==0:
             p += 5
-        elif(self.get_edifici()>2):
+        elif self.get_edifici()>2:
             p += 12
 
         return atk + dif - p
@@ -166,14 +166,14 @@ class Mazzo:
         esito = False
         i = 0
 
-        while(i < len(carte_deck) - 1):
-            if(carte_deck[i].nome==nome_carta):
+        while i < len(carte_deck) - 1:
+            if carte_deck[i].nome==nome_carta:
                 nuovo_mazzo.remove(carte_deck[i])
                 esito = True
-                break;
+                break
             i += 1
 
-        if(esito):
+        if esito:
             nuovo_mazzo.append(carta_sostituiva)
             return Mazzo(nuovo_mazzo)
         else:

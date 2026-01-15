@@ -1,6 +1,6 @@
 import csv
-from .Carta import Carta
-from .DatabaseCarte import DatabaseCarte
+from Carta import Carta
+from DatabaseCarte import DatabaseCarte
 
 class PopolaDatabase:
     def __init__(self, db: DatabaseCarte, file_csv: str):
