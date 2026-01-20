@@ -1,5 +1,7 @@
 import math
 
+from jinja2.nodes import List
+
 from Carta import Carta
 from DatabaseCarte import DatabaseCarte
 
@@ -129,12 +131,12 @@ class Mazzo:
         return True
 
     def caclola_fitness(self):
-        atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.3) * (1+self.get_velocita_medio()*0.2)
-        dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.2) * (1+self.get_effetti()*0.1)
+        atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.2) * (1+self.get_velocita_medio()*0.2)
+        dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.1) * (1+self.get_effetti()*0.05)
         p = 0
 
-        if(self.get_costo_medio() > 3):
-            p += math.pow(self.get_costo_medio() - 3,3)
+        if(self.get_costo_medio() > 1):
+            p += math.pow(self.get_costo_medio() - 1,2.5)
 
         if(self.get_bersaglio()>2):
             p += self.get_bersaglio()*3
@@ -178,6 +180,34 @@ class Mazzo:
             return Mazzo(nuovo_mazzo)
         else:
             return esito
+
+    @staticmethod
+    def mazzo_random():
+        i = 0
+        num_incantesimi = 0
+        deck = []
+        db = DatabaseCarte()
+        test = True
+
+        while(i<8):
+            carta = db.estraizione_casuale()
+
+            for item in deck:
+                if item.nome==carta.nome:
+                    test = False
+                if carta.tipologia == "incantesimo":
+                    num_incantesimi += 1
+                    if num_incantesimi > 2:
+                        num_incantesimi -= 1
+                        test = False
+            if(not test):
+               test = True
+               continue
+            deck.append(carta)
+            i += 1
+
+        return Mazzo(deck)
+
 
 
 

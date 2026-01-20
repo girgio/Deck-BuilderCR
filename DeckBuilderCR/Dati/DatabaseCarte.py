@@ -1,5 +1,6 @@
 import json
 from Carta import Carta
+import random
 
 class DatabaseCarte:
     def __init__(self, file_name='database_carte.json'):
@@ -32,3 +33,6 @@ class DatabaseCarte:
         # Mostra tutte le carte nel database
         for nome, carta in self.database.items():
             print(f"{nome}: {carta}")
+
+    def estraizione_casuale(self):
+        return Carta.carta_da_dict(random.choice(list(self.database.values())))
