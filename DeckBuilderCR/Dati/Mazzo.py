@@ -1,6 +1,6 @@
 
 import math
-from Carta import Carta
+from Dati.Carta import Carta
 
 class Mazzo:
     def __init__(self, carte):

@@ -1,5 +1,5 @@
 import json
-from Carta import Carta
+from Dati.Carta import Carta
 
 class DatabaseCarte:
     def __init__(self, file_name='database_carte.json'):
