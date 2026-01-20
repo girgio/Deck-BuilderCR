@@ -5,7 +5,7 @@ class Carta:
         self.punti_vita = punti_vita
         self.costo = costo
         self.volante = volante
-        self.tipologia = tipologia #truppa,edificio o incantersimo
+        self.tipologia = tipologia #truppa,edificio o incantesimo
         self.velocita = velocita
         self.portata = portata
         self.tipo_bersaglio = tipo_bersaglio
