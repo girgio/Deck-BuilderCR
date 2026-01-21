@@ -1,9 +1,11 @@
-
 import math
 from Dati.Carta import Carta
+from jinja2.nodes import List
+from Carta import Carta
+from DatabaseCarte import DatabaseCarte
 
 class Mazzo:
-    def __init__(self, carte):
+    def __init__(self,carte):
         if len(carte) != 8:
             raise ValueError("Il mazzo deve contenere esattamente 8 carte")
         for carta in carte:
@@ -48,7 +50,7 @@ class Mazzo:
     def get_effetti(self):
         return sum(c.effetti_aggiuntivi for c in self.carte)
 
-    # Controlla se il deck rispetta i vincoli
+    #Controlla se il deck rispetta i vincoli
     def is_valido(self):
         if self.get_incantesimi() > 2:
             return False
@@ -56,26 +58,30 @@ class Mazzo:
         return len(set(nomi)) == len(nomi)  # no doppioni
 
     def caclola_fitness(self):
-        # Nota: se danno/vita = 0, sqrt(0) ok.
-        atk = math.sqrt(self.get_danno_medio()) * (1 + self.get_bersaglio() * 0.3) * (1 + self.get_velocita_medio() * 0.2)
-        dif = math.sqrt(self.get_vita_medio() / 6) * (1 + self.get_portata() * 0.2) * (1 + self.get_effetti() * 0.1)
-
+        atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.2) * (1+self.get_velocita_medio()*0.2)
+        dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.1) * (1+self.get_effetti()*0.05)
         p = 0
-        if self.get_costo_medio() > 3:
-            p += (self.get_costo_medio() - 3) ** 3
-        if self.get_bersaglio() > 2:
-            p += self.get_bersaglio() * 3
-        if self.get_portata() == 0:
+
+        if(self.get_costo_medio() > 1):
+            p += math.pow(self.get_costo_medio() - 1,2.5)
+
+        if(self.get_bersaglio()>2):
+            p += self.get_bersaglio()*3
+
+        if(self.get_portata() == 0):
             p += 15
-        if self.get_incantesimi() == 0:
+
+        if(self.get_incantesimi()==0):
             p += 12
-        if self.get_volante() == 0:
+
+        if(self.get_volante()==0):
             p += 10
-        elif self.get_volante() > 3:
+        elif(self.get_volante()>3):
             p += 4
-        if self.get_edifici() == 0:
+
+        if(self.get_edifici()==0):
             p += 5
-        elif self.get_edifici() > 2:
+        elif(self.get_edifici()>2):
             p += 12
 
         return atk + dif - p
@@ -97,6 +103,34 @@ class Mazzo:
         # evita doppioni "in ingresso"
         if any(c.nome == nome_carta_sostitutiva for c in nuovo_mazzo):
             return False
+    @staticmethod
+    def mazzo_random():
+        i = 0
+        num_incantesimi = 0
+        deck = []
+        db = DatabaseCarte()
+        test = True
+
+        while(i<8):
+            carta = db.estraizione_casuale()
+
+            for item in deck:
+                if item.nome==carta.nome:
+                    test = False
+                if carta.tipologia == "incantesimo":
+                    num_incantesimi += 1
+                    if num_incantesimi > 2:
+                        num_incantesimi -= 1
+                        test = False
+            if(not test):
+               test = True
+               continue
+            deck.append(carta)
+            i += 1
+
+        return Mazzo(deck)
+
+
 
         nuovo_mazzo[idx] = carta_sostitutiva
         candidato = Mazzo(nuovo_mazzo)

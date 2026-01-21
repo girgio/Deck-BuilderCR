@@ -7,6 +7,7 @@ class DatabaseCarte:
         self.database = self.carica_database()
 
     def carica_database(self):
+        # Carica il database da un file JSON
         try:
             with open(self.file_name, 'r') as file:
                 data = json.load(file)
@@ -15,10 +16,12 @@ class DatabaseCarte:
             return {}
 
     def salva_database(self):
+        # Salva il database su un file JSON
         with open(self.file_name, 'w') as file:
             json.dump(self.database, file, indent=4)
 
-    def aggiungi_carta(self, carta: Carta):
+    def aggiungi_carta(self, carta):
+        # Aggiunge una nuova carta al database
         self.database[carta.nome] = carta.to_dict()
         self.salva_database()
 
@@ -36,5 +39,6 @@ class DatabaseCarte:
         return [Carta.carta_da_dict(d) for d in self.database.values()]
 
     def mostra_database(self):
+        # Mostra tutte le carte nel database
         for nome, carta in self.database.items():
             print(f"{nome}: {carta}")
