@@ -1,7 +1,6 @@
 import math
-
+from Dati.Carta import Carta
 from jinja2.nodes import List
-
 from Carta import Carta
 from DatabaseCarte import DatabaseCarte
 
@@ -9,126 +8,54 @@ class Mazzo:
     def __init__(self,carte):
         if len(carte) != 8:
             raise ValueError("Il mazzo deve contenere esattamente 8 carte")
-
         for carta in carte:
             if not isinstance(carta, Carta):
                 raise TypeError("Tutti gli elementi devono essere di tipo Carta")
+        self.carte = list(carte)
 
-        self.carte = carte
+    # --- medie: protette da divisione per zero ---
+    def _media_sicura(self, valori):
+        valori_validi = [v for v in valori if v >= 0]
+        if not valori_validi:
+            return 0
+        return sum(valori_validi) / len(valori_validi)
 
     def get_danno_medio(self):
-        danno_totale = 0
-        carte_contate = 8
-
-        for i in self.carte:
-            if i.danno_s >= 0:
-                danno_totale += i.danno_s
-            else:
-                carte_contate -= 1
-        danno_medio = danno_totale/carte_contate
-
-        return danno_medio
+        return self._media_sicura([c.danno_s for c in self.carte])
 
     def get_vita_medio(self):
-        vita_totale = 0
-        carte_contate = 8
-
-        for i in self.carte:
-            if i.punti_vita >= 0:
-                vita_totale += i.punti_vita
-            else:
-                carte_contate -= 1
-
-
-        vita_medio = vita_totale/carte_contate
-        return vita_medio
+        return self._media_sicura([c.punti_vita for c in self.carte])
 
     def get_costo_medio(self):
-        costo_totale = 0
-        carte_contate = 8
-
-        for i in self.carte:
-            if i.costo >= 0:
-                costo_totale += i.costo
-            else:
-                carte_contate -= 1
-
-        costo_medio = costo_totale/carte_contate
-        return costo_medio
+        return self._media_sicura([c.costo for c in self.carte])
 
     def get_velocita_medio(self):
-        velocita_totale = 0
-        carte_contate = 8
-
-        for i in self.carte:
-            if i.velocita >= 0:
-                velocita_totale += i.velocita
-            else:
-                carte_contate -= 1
-        velocita_medio = velocita_totale/carte_contate
-        return velocita_medio
+        return self._media_sicura([c.velocita for c in self.carte])
 
     def get_volante(self):
-        count = 0
-
-        for i in self.carte:
-            if i.volante:
-                count += 1
-
-        return count
+        return sum(1 for c in self.carte if c.volante)
 
     def get_incantesimi(self):
-        count = 0
-
-        for i in self.carte:
-            if i.tipologia.casefold() == 'incantesimo':
-                count += 1
-
-        return count
+        return sum(1 for c in self.carte if str(c.tipologia).casefold() == "incantesimo")
 
     def get_edifici(self):
-        count = 0
-        for i in self.carte:
-            if i.tipologia.casefold() == 'edificio':
-                count += 1
-
-        return count
+        return sum(1 for c in self.carte if str(c.tipologia).casefold() == "edificio")
 
     def get_portata(self):
-        count = 0
-        for i in self.carte:
-            if i.portata:
-                count += 1
-        return count
+        return sum(1 for c in self.carte if c.portata)
 
-    def get_bersaglio(self ):
-        count = 0
-        for i in self.carte:
-            if i.tipo_bersaglio:
-                count += 1
-        return count
+    def get_bersaglio(self):
+        return sum(1 for c in self.carte if c.tipo_bersaglio)
 
     def get_effetti(self):
-        tot = 0
-        for i in self.carte:
-            tot += i.effetti_aggiuntivi
-        return tot
+        return sum(c.effetti_aggiuntivi for c in self.carte)
 
     #Controlla se il deck rispetta i vincoli
     def is_valido(self):
-        l= len(self.carte)
-        i = 0
-        if(self.get_incantesimi()>2):
+        if self.get_incantesimi() > 2:
             return False
-        while i< l - 1:
-            j = i + 1
-            while j < l:
-                if self.carte[i].nome==self.carte[j].nome:
-                    return False
-                j+=1
-            i += 1
-
-        return True
+        nomi = [c.nome for c in self.carte]
+        return len(set(nomi)) == len(nomi)  # no doppioni
 
     def caclola_fitness(self):
         atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.2) * (1+self.get_velocita_medio()*0.2)
@@ -159,28 +86,23 @@ class Mazzo:
 
         return atk + dif - p
 
-    #Restiuisce un nuovo mazzo a partire dal mazzo corrente, ma con "nome_carta" sostituito da "nome_carta_sotitutiva", restituisce false se non trova la carta da sostituire
-    def sostituisci_carta(self,nome_carta,nome_carta_sostituiva):
-        db = DatabaseCarte()
-        carta_sostituiva = db.get_carta(nome_carta_sostituiva)
-        carte_deck = self.carte
+    # Restituisce un nuovo mazzo sostituendo una carta; ritorna False se non possibile
+    # db va passato dall'esterno (fondamentale per Hill Climbing)
+    def sostituisci_carta(self, nome_carta, nome_carta_sostitutiva, db):
+        carta_sostitutiva = db.get_carta(nome_carta_sostitutiva)
+        if carta_sostitutiva is None:
+            return False
+
         nuovo_mazzo = self.carte.copy()
-        esito = False
-        i = 0
 
-        while(i < len(carte_deck) - 1):
-            if(carte_deck[i].nome==nome_carta):
-                nuovo_mazzo.remove(carte_deck[i])
-                esito = True
-                break;
-            i += 1
+        # trova la carta da sostituire (ora controlla anche l'ultima)
+        idx = next((i for i, c in enumerate(nuovo_mazzo) if c.nome == nome_carta), None)
+        if idx is None:
+            return False
 
-        if(esito):
-            nuovo_mazzo.append(carta_sostituiva)
-            return Mazzo(nuovo_mazzo)
-        else:
-            return esito
-
+        # evita doppioni "in ingresso"
+        if any(c.nome == nome_carta_sostitutiva for c in nuovo_mazzo):
+            return False
     @staticmethod
     def mazzo_random():
         i = 0
@@ -210,7 +132,15 @@ class Mazzo:
 
 
 
+        nuovo_mazzo[idx] = carta_sostitutiva
+        candidato = Mazzo(nuovo_mazzo)
 
+        # scarta se viola vincoli (incantesimi ecc.)
+        if not candidato.is_valido():
+            return False
 
+        return candidato
 
-
+    # utile per hill climbing: chiave canonica (ordine irrilevante)
+    def key(self):
+        return tuple(sorted(c.nome for c in self.carte))

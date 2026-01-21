@@ -1,6 +1,5 @@
 import json
-from Carta import Carta
-import random
+from Dati.Carta import Carta
 
 class DatabaseCarte:
     def __init__(self, file_name='database_carte.json'):
@@ -11,7 +10,8 @@ class DatabaseCarte:
         # Carica il database da un file JSON
         try:
             with open(self.file_name, 'r') as file:
-                return json.load(file)
+                data = json.load(file)
+                return data if isinstance(data, dict) else {}
         except (FileNotFoundError, json.JSONDecodeError):
             return {}
 
@@ -25,14 +25,20 @@ class DatabaseCarte:
         self.database[carta.nome] = carta.to_dict()
         self.salva_database()
 
-    def get_carta(self, nome):
-        # Restituisce la carta dal database dato il nome
-        return Carta.carta_da_dict(self.database.get(nome))
+    def get_carta(self, nome: str):
+        dati = self.database.get(nome)
+        if dati is None:
+            return None
+        return Carta.carta_da_dict(dati)
+
+    # --- NUOVI METODI UTILI PER HILL CLIMBING ---
+    def get_nomi_carte(self):
+        return list(self.database.keys())
+
+    def get_tutte_le_carte(self):
+        return [Carta.carta_da_dict(d) for d in self.database.values()]
 
     def mostra_database(self):
         # Mostra tutte le carte nel database
         for nome, carta in self.database.items():
             print(f"{nome}: {carta}")
-
-    def estraizione_casuale(self):
-        return Carta.carta_da_dict(random.choice(list(self.database.values())))
