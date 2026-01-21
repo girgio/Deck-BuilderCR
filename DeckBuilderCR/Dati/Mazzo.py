@@ -1,8 +1,7 @@
 import math
 from Dati.Carta import Carta
 from jinja2.nodes import List
-from Carta import Carta
-from DatabaseCarte import DatabaseCarte
+from Dati.DatabaseCarte import DatabaseCarte
 
 class Mazzo:
     def __init__(self,carte):
@@ -103,6 +102,15 @@ class Mazzo:
         # evita doppioni "in ingresso"
         if any(c.nome == nome_carta_sostitutiva for c in nuovo_mazzo):
             return False
+        nuovo_mazzo[idx] = carta_sostitutiva
+        candidato = Mazzo(nuovo_mazzo)
+
+        # scarta se viola vincoli (incantesimi ecc.)
+        if not candidato.is_valido():
+            return False
+
+        return candidato
+
     @staticmethod
     def mazzo_random():
         i = 0
@@ -131,15 +139,6 @@ class Mazzo:
         return Mazzo(deck)
 
 
-
-        nuovo_mazzo[idx] = carta_sostitutiva
-        candidato = Mazzo(nuovo_mazzo)
-
-        # scarta se viola vincoli (incantesimi ecc.)
-        if not candidato.is_valido():
-            return False
-
-        return candidato
 
     # utile per hill climbing: chiave canonica (ordine irrilevante)
     def key(self):
