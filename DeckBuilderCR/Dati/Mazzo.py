@@ -86,7 +86,6 @@ class Mazzo:
         return atk + dif - p
 
     # Restituisce un nuovo mazzo sostituendo una carta; ritorna False se non possibile
-    # db va passato dall'esterno (fondamentale per Hill Climbing)
     def sostituisci_carta(self, nome_carta, nome_carta_sostitutiva, db):
         carta_sostitutiva = db.get_carta(nome_carta_sostitutiva)
         if carta_sostitutiva is None:
