@@ -23,7 +23,7 @@ def main():
         if not (1 <= len(fisse) <= 4):
             raise ValueError("Devi inserire da 1 a 4 carte fisse.")
 
-    # 🔹 MAZZO INIZIALE CASUALE (diagnostica)
+    #MAZZO INIZIALE CASUALE
     mazzo_iniziale = costruisci_mazzo_random_valido(db, fisse)
 
     print("\n==============================")

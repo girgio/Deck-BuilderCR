@@ -56,7 +56,7 @@ class Mazzo:
         nomi = [c.nome for c in self.carte]
         return len(set(nomi)) == len(nomi)  # no doppioni
 
-    def caclola_fitness(self):
+    def calcola_fitness(self):
         atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.2) * (1+self.get_velocita_medio()*0.2)
         dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.1) * (1+self.get_effetti()*0.05)
         p = 0
@@ -137,7 +137,8 @@ class Mazzo:
 
         return Mazzo(deck)
 
-
+    def stampa_mazzo(self):
+        print([c.nome for c in self.carte])
 
     # utile per hill climbing: chiave canonica (ordine irrilevante)
     def key(self):
