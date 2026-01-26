@@ -1081,7 +1081,7 @@
     },
     "Torre infernale": {
         "nome": "Torre infernale",
-        "danno_s": 777,
+        "danno_s": 500,
         "punti_vita": 1748,
         "costo": 5,
         "volante": false,
