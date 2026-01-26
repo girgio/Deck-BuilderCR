@@ -85,7 +85,7 @@ def costruisci_mazzo_random_valido(
 
 def _stampa_mazzo(mazzo: Mazzo, titolo: str = "Mazzo") -> None:
     print(f"\n=== {titolo} ===")
-    print(f"Fitness: {mazzo.caclola_fitness():.4f}")
+    print(f"Fitness: {mazzo.calcola_fitness():.4f}")
     print("Carte:")
     for c in mazzo.carte:
         print(f"- {c.nome} ({c.tipologia}, costo={c.costo})")
@@ -124,12 +124,12 @@ def hill_climbing(
 
     corrente = mazzo_iniziale
     best = mazzo_iniziale
-    best_fit = best.caclola_fitness()
+    best_fit = best.calcola_fitness()
 
     stall = 0
 
     for step in range(1, max_iter + 1):
-        corrente_fit = corrente.caclola_fitness()
+        corrente_fit = corrente.calcola_fitness()
 
         deck_nomi = [c.nome for c in corrente.carte]
         deck_set = set(deck_nomi)
@@ -153,7 +153,7 @@ def hill_climbing(
             if not candidato:
                 continue
 
-            fit = candidato.caclola_fitness()
+            fit = candidato.calcola_fitness()
             if fit > best_neighbor_fit:
                 best_neighbor_fit = fit
                 best_neighbor = candidato

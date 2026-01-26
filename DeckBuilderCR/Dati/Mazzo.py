@@ -138,7 +138,9 @@ class Mazzo:
         return Mazzo(deck)
 
     def stampa_mazzo(self):
-        print([c.nome for c in self.carte])
+        nomi = ",".join(c.nome for c in self.carte)
+        fitness = round(self.calcola_fitness(), 1)
+        print(f"Carte: {nomi}; fitness:{fitness}")
 
     # utile per hill climbing: chiave canonica (ordine irrilevante)
     def key(self):

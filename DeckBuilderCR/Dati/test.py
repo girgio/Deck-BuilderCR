@@ -22,12 +22,12 @@ deck3 = Mazzo(carte3)
 deck4 = Mazzo(carte4)
 deck5 = Mazzo(carte5)
 deck6 = Mazzo(carte6)
-print(deck.caclola_fitness())
-print(deck2.caclola_fitness())
-print(deck3.caclola_fitness())
-print(deck4.caclola_fitness())
-print(deck5.caclola_fitness())
-print(deck6.caclola_fitness())
+print(deck.calcola_fitness())
+print(deck2.calcola_fitness())
+print(deck3.calcola_fitness())
+print(deck4.calcola_fitness())
+print(deck5.calcola_fitness())
+print(deck6.calcola_fitness())
 
 start = time.perf_counter()
 while(True):
@@ -35,7 +35,7 @@ while(True):
     lista= []
     lista = mazzo_random.carte
 
-    if (mazzo_random.caclola_fitness() > 60):
+    if (mazzo_random.calcola_fitness() > 60):
         break
 print()
 print("Carte nel mazzo random:")
@@ -43,6 +43,6 @@ print("Carte nel mazzo random:")
 for carta in lista:
     print(carta.nome)
 
-print(mazzo_random.caclola_fitness())
+print(mazzo_random.calcola_fitness())
 end = time.perf_counter()
 print(end - start)
