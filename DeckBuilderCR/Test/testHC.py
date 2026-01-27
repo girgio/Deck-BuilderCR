@@ -3,14 +3,14 @@ import time
 import os
 
 from Dati.DatabaseCarte import DatabaseCarte
-from Algoritmi.HillClimbing import hill_climbing, costruisci_mazzo_random_valido
+from Algoritmi.HillClimbing.HillClimbing import hill_climbing, costruisci_mazzo_random_valido
 
 
 def main():
     # Seed forte per evitare qualsiasi ripetibilità accidentale
         random.seed(time.time_ns() ^ os.getpid())
 
-        db = DatabaseCarte("Dati/database_carte.json")
+        db = DatabaseCarte("../Dati/database_carte.json")
 
         raw = input(
             "Inserisci da 1 a 4 carte fisse (nomi separati da virgola), "
