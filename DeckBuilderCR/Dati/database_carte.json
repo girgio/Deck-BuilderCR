@@ -157,7 +157,7 @@
     },
     "Spaccamuro": {
         "nome": "Spaccamuro",
-        "danno_s": 500,
+        "danno_s": 300,
         "punti_vita": 660,
         "costo": 2,
         "volante": false,
