@@ -9,7 +9,7 @@ def mainGA():
     # Seed forte per evitare qualsiasi ripetibilità accidentale
     random.seed(time.time_ns() ^ os.getpid())
 
-    db = DatabaseCarte("Dati/database_carte.json")
+    db = DatabaseCarte("../Dati/database_carte.json")
     print("Carte disponibili:", len(db.database))
 
     raw = input(

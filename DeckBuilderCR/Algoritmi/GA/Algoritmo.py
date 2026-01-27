@@ -1,9 +1,7 @@
 import random
-from typing import Set, Tuple, Optional, List
-from Algoritmi.GA.Operatori import *
+from typing import Set, Tuple, Optional
 from Dati.Mazzo import Mazzo
-from Dati.Carta import Carta
-from Algoritmi.HillClimbing import costruisci_mazzo_random_valido
+from Algoritmi import costruisci_mazzo_random_valido
 
 def algoritmo_genetico(
     size_popolazione:int,
