@@ -1,4 +1,6 @@
 import json
+import random
+
 from Dati.Carta import Carta
 
 class DatabaseCarte:
@@ -42,3 +44,8 @@ class DatabaseCarte:
         # Mostra tutte le carte nel database
         for nome, carta in self.database.items():
             print(f"{nome}: {carta}")
+
+    def estraizione_casuale(self):
+        if not self.database:
+            raise ValueError("DatabaseCarte è vuoto: impossibile estrarre una carta casuale")
+        return Carta.carta_da_dict(random.choice(list(self.database.values())))

@@ -56,7 +56,7 @@ class Mazzo:
         nomi = [c.nome for c in self.carte]
         return len(set(nomi)) == len(nomi)  # no doppioni
 
-    def caclola_fitness(self):
+    def calcola_fitness(self):
         atk = math.sqrt(self.get_danno_medio()) * (1+self.get_bersaglio()*0.2) * (1+self.get_velocita_medio()*0.2)
         dif = math.sqrt(self.get_vita_medio()/6) * (1+self.get_portata()*0.1) * (1+self.get_effetti()*0.05)
         p = 0
@@ -86,7 +86,6 @@ class Mazzo:
         return atk + dif - p
 
     # Restituisce un nuovo mazzo sostituendo una carta; ritorna False se non possibile
-    # db va passato dall'esterno (fondamentale per Hill Climbing)
     def sostituisci_carta(self, nome_carta, nome_carta_sostitutiva, db):
         carta_sostitutiva = db.get_carta(nome_carta_sostitutiva)
         if carta_sostitutiva is None:
@@ -138,7 +137,10 @@ class Mazzo:
 
         return Mazzo(deck)
 
-
+    def stampa_mazzo(self):
+        nomi = ",".join(c.nome for c in self.carte)
+        fitness = round(self.calcola_fitness(), 1)
+        print(f"Carte: {nomi}; fitness:{fitness}")
 
     # utile per hill climbing: chiave canonica (ordine irrilevante)
     def key(self):
