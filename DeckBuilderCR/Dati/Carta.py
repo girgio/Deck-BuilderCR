@@ -26,7 +26,7 @@ class Carta:
             'effetti_aggiuntivi': self.effetti_aggiuntivi
         }
 
-    def carta_da_dict(dati: dict):
+    def carta_da_dict (dati: dict):
         return Carta(
             nome=dati['nome'],
             danno_s=dati['danno_s'],

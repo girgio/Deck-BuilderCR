@@ -1,5 +1,5 @@
 ﻿nome;danno_s;punti_vita;costo;volante;tipologia;velocita;portata;tipo_bersaglio;effetti_aggiuntivi
-Spirito elletrico;99;230;1;False;truppa;3;True;False;1
+Spirito elettrico;99;230;1;False;truppa;3;True;False;1
 Spirito del fuoco;207;230;1;False;truppa;3;True;False;0
 Spirito della cura;110;230;1;False;truppa;3;True;False;1
 Spirito del ghiaccio;110;230;1;False;truppa;3;True;False;1
