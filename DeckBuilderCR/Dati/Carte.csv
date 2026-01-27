@@ -28,7 +28,7 @@ Arciere pirotecnico;106;304;3;False;truppa;2;True;False;1
 Pescatore;149;870;3;False;truppa;1;False;False;1
 Gang di goblin;468;1005;3;False;truppa;2;True;False;0
 Guardie;351;1011;3;False;truppa;2;False;False;0
-Stregone di ghiaccio;52;688;3;False;truppa;1;True;False;2
+Stregone di ghiaccio;52;688;3;False;truppa;1;True;False;1
 Cavaliere;168;1766;3;False;truppa;1;False;False;0
 Megasgherro;207;837;3;True;truppa;1;True;False;0
 Minatore;100;1210;3;False;truppa;2;False;False;1
@@ -78,18 +78,18 @@ Mongolfiera;320;1679;5;True;truppa;1;False;True;0
 Barbari;294;3350;5;False;truppa;1;False;False;0
 Bocciatore;115;2081;5;False;truppa;0;False;False;1
 Cannoe a rotelle;236;1809;5;False;truppa;1;False;False;1
-Drago elletrico;91;949;5;True;truppa;1;True;False;2
+Drago elletrico;91;949;5;True;truppa;1;True;False;1
 Boia;140;1280;5;False;truppa;1;True;False;1
 Gigante;160;4090;5;False;truppa;0;False;True;0
 Macchina goblin;260;2185;5;False;truppa;1;False;False;0
 Orda di sgherri;485;1150;5;True;truppa;2;True;False;0
 Principe;279;1920;5;False;truppa;1;False;False;1
-Domatrice di arieti;147;1697;5;False;truppa;1;True;True;1
+Domatrice di arieti;147;1697;5;False;truppa;1;False;True;1
 Mascalzoni;394;2462;5;False;truppa;1;True;False;0
 Maiali royale;244;3348;5;False;truppa;3;False;True;0
 Strega;122;839;5;False;truppa;1;True;False;1
 Stregone;200;755;5;False;truppa;1;True;False;1
-Torre infernale;777;1748;5;False;edificio;;True;False;0
+Torre infernale;500;1748;5;False;edificio;;True;False;0
 Barbari elite;548;2682;6;False;truppa;2;False;False;0
 Gigante scheletro;197;3617;6;False;truppa;1;False;False;1
 Gigante royale;180;3164;6;False;truppa;0;False;True;1
@@ -100,7 +100,7 @@ Capanna dei barbari;0;1164;6;False;edificio;;False;False;2
 Estrattore di elisir;0;1070;6;False;edificio;;False;False;2
 Fulmine;671;;6;;incantesimo;;;;1
 Razzo;927;;6;;incantesimo;;;;0
-Gigante elletrico;77;3885;7;False;truppa;0;True;True;2
+Gigante elletrico;77;3885;7;False;truppa;0;False;True;2
 Gran cavaliere;157;3993;7;False;truppa;1;False;False;1
 Pekka;463;3760;7;False;truppa;0;False;False;0
 Reclute royale;612;4772;7;False;truppa;1;False;False;0

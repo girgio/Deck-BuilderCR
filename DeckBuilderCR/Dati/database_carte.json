@@ -9,7 +9,7 @@
         "velocita": 3,
         "portata": true,
         "tipo_bersaglio": false,
-        "effetti_aggiuntivi": 1
+        "effetti_aggiuntivi": 0
     },
     "Spirito del fuoco": {
         "nome": "Spirito del fuoco",
@@ -33,7 +33,7 @@
         "velocita": 3,
         "portata": true,
         "tipo_bersaglio": false,
-        "effetti_aggiuntivi": 1
+        "effetti_aggiuntivi": 0
     },
     "Spirito del ghiaccio": {
         "nome": "Spirito del ghiaccio",
@@ -45,7 +45,7 @@
         "velocita": 3,
         "portata": true,
         "tipo_bersaglio": false,
-        "effetti_aggiuntivi": 1
+        "effetti_aggiuntivi": 0
     },
     "Scheletri": {
         "nome": "Scheletri",
@@ -157,7 +157,7 @@
     },
     "Spaccamuro": {
         "nome": "Spaccamuro",
-        "danno_s": 700,
+        "danno_s": 500,
         "punti_vita": 660,
         "costo": 2,
         "volante": false,
@@ -357,7 +357,7 @@
         "velocita": 1,
         "portata": true,
         "tipo_bersaglio": false,
-        "effetti_aggiuntivi": 2
+        "effetti_aggiuntivi": 1
     },
     "Cavaliere": {
         "nome": "Cavaliere",
@@ -957,7 +957,7 @@
         "velocita": 1,
         "portata": true,
         "tipo_bersaglio": false,
-        "effetti_aggiuntivi": 2
+        "effetti_aggiuntivi": 1
     },
     "Boia": {
         "nome": "Boia",
@@ -1027,7 +1027,7 @@
         "volante": false,
         "tipologia": "truppa",
         "velocita": 1,
-        "portata": true,
+        "portata": false,
         "tipo_bersaglio": true,
         "effetti_aggiuntivi": 1
     },
@@ -1081,7 +1081,7 @@
     },
     "Torre infernale": {
         "nome": "Torre infernale",
-        "danno_s": 777,
+        "danno_s": 500,
         "punti_vita": 1748,
         "costo": 5,
         "volante": false,
@@ -1219,7 +1219,7 @@
         "volante": false,
         "tipologia": "truppa",
         "velocita": 0,
-        "portata": true,
+        "portata": false,
         "tipo_bersaglio": true,
         "effetti_aggiuntivi": 2
     },
@@ -1320,7 +1320,7 @@
         "effetti_aggiuntivi": 2
     },
     "Lapide": {
-        "nome": "Lapidde",
+        "nome": "Lapide",
         "danno_s": 0,
         "punti_vita": 529,
         "costo": 3,
