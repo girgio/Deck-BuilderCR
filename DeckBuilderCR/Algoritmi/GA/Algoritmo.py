@@ -1,6 +1,5 @@
 import random
 from typing import Set, Tuple, Optional
-
 from Algoritmi.GA.Operatori import selezione, crossover, mutazione
 from Dati.DatabaseCarte import DatabaseCarte
 from Dati.Mazzo import Mazzo
