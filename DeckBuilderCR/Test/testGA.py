@@ -26,8 +26,8 @@ def mainGA():
                 raise ValueError("Devi inserire da 1 a 4 carte fisse.")
 
         best, fit = algoritmo_genetico(
-            size_popolazione = 100,
-            size_mating_pool = 60,
+            size_popolazione = 10000,
+            size_mating_pool = 2000,
             p_mutazione = 0.8,
             p_crossover = 1,
             db = db,
@@ -37,7 +37,5 @@ def mainGA():
 
         print("---MAZZO FINALE---")
         best.stampa_mazzo()
-        print(Mazzo([db.get_carta("Strega"),db.get_carta("Macchina volante"),db.get_carta("Tronco"),db.get_carta("Domatore di cinghiali"),db.get_carta("Principe"),db.get_carta("Cacciatore"),db.get_carta("Spirito del ghiaccio"),db.get_carta("Frecce")]).calcola_fitness())
-
 if __name__ == "__main__":
     mainGA()

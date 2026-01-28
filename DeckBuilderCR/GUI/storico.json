@@ -600,27 +600,5 @@
       "Mastino lavico",
       "Maledizione goblin"
     ]
-  },
-  {
-    "timestamp": "2026-01-28 01:41:20",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 41.484119557808505,
-    "mazzo": [
-      "Drago infernale",
-      "Spirito del fuoco",
-      "Furia",
-      "Guardie",
-      "Spaccamuro",
-      "Gabbia per goblin",
-      "Tornado",
-      "Principessa"
-    ]
   }
 ]
