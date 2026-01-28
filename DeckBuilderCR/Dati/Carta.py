@@ -1,3 +1,5 @@
+from Dati.utils import nome_carta_to_url
+
 class Carta:
     def __init__(self, nome, danno_s, punti_vita, costo, volante, tipologia, velocita, portata, tipo_bersaglio, effetti_aggiuntivi):
         self.nome = nome
@@ -10,6 +12,28 @@ class Carta:
         self.portata = portata
         self.tipo_bersaglio = tipo_bersaglio
         self.effetti_aggiuntivi = effetti_aggiuntivi
+
+    @property
+    def image_url(self):
+        """Genera dinamicamente l'URL dell'immagine CDN"""
+        return nome_carta_to_url(self.nome)
+
+    @property
+    def elixir(self):
+        """Alias per costo (per compatibilità con Streamlit)"""
+        return self.costo
+
+    @property
+    def rarita(self):
+        """Determina rarità dal costo"""
+        if self.costo <= 1:
+            return "Common"
+        elif self.costo <= 3:
+            return "Rare"
+        elif self.costo <= 5:
+            return "Epic"
+        else:
+            return "Legendary"
 
     def to_dict(self):
         # Converte l'oggetto carta in un dizionario
@@ -25,7 +49,7 @@ class Carta:
             'tipo_bersaglio': self.tipo_bersaglio,
             'effetti_aggiuntivi': self.effetti_aggiuntivi
         }
-
+    @staticmethod
     def carta_da_dict (dati: dict):
         return Carta(
             nome=dati['nome'],
