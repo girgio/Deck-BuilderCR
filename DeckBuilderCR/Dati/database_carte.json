@@ -433,8 +433,8 @@
     },
     "Barile d'ossa": {
         "nome": "Barile d'ossa",
-        "danno_s": 511,
-        "punti_vita": 1099,
+        "danno_s": 351,
+        "punti_vita": 999,
         "costo": 3,
         "volante": true,
         "tipologia": "truppa",
@@ -972,7 +972,7 @@
         "effetti_aggiuntivi": 1
     },
     "Gigante": {
-        "nome": "Gigante ",
+        "nome": "Gigante",
         "danno_s": 160,
         "punti_vita": 4090,
         "costo": 5,
@@ -1341,6 +1341,18 @@
         "velocita": -1,
         "portata": false,
         "tipo_bersaglio": false,
+        "effetti_aggiuntivi": 1
+    },
+    "Gigante goblin": {
+        "nome": "Gigante goblin",
+        "danno_s": 177,
+        "punti_vita": 3020,
+        "costo": 6,
+        "volante": false,
+        "tipologia": "truppa",
+        "velocita": 1,
+        "portata": false,
+        "tipo_bersaglio": true,
         "effetti_aggiuntivi": 1
     }
 }

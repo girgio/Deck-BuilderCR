@@ -1,6 +1,5 @@
 import math
 from Dati.Carta import Carta
-from jinja2.nodes import List
 from Dati.DatabaseCarte import DatabaseCarte
 
 class Mazzo:
