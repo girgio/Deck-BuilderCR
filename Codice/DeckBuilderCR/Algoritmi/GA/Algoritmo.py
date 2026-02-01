@@ -76,7 +76,6 @@ def algoritmo_genetico(
             m.stampa_mazzo()
         print()
 
-
     return best_mazzo, best_fitness
 
 

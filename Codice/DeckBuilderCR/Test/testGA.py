@@ -26,9 +26,9 @@ def mainGA():
                 raise ValueError("Devi inserire da 1 a 4 carte fisse.")
 
         best, fit = algoritmo_genetico(
-            size_popolazione = 10,
-            size_mating_pool = 10,
-            p_mutazione = 1,
+            size_popolazione = 100,
+            size_mating_pool = 80,
+            p_mutazione = 0.8,
             p_crossover = 1,
             db = db,
             fisse = fisse,

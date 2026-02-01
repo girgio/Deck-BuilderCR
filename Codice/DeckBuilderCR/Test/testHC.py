@@ -36,7 +36,7 @@ def main():
             db=db,
             fisse=fisse,
             max_iter=200,
-            neighbors_per_iter=60,
+            neighbors_per_iter=840,
             max_stalli=30,
             usa_restart=True,
             seed=None,

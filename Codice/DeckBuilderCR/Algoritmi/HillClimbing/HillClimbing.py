@@ -175,4 +175,5 @@ def hill_climbing(
     if stampa_finale:
         _stampa_mazzo(best, titolo=f"Best finale dopo {max_iter} iterazioni")
 
+
     return best, best_fit

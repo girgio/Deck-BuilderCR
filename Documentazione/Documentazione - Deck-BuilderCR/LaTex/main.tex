@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{amssymb}
+\usepackage{hyperref}
 \emergencystretch=2em
 \setlength{\parindent}{0pt}
 
@@ -257,13 +258,13 @@ Esempio di assegnamento di valori della funzione di fitness lineare:
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth]{images/DeckScarso.png}
-\caption*{DECK 1: Soluzione pessima, deck sbilanciato e troppo costoso (fitness = 188).}
+\caption{DECK 1: Soluzione pessima, deck sbilanciato e troppo costoso (fitness = 188).}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth]{images/DeckMigliore.png}
-\caption*{DECK 2: Soluzione buona, deck equilibrato e con costo moderato (fitness = 180).}
+\caption{DECK 2: Soluzione buona, deck equilibrato e con costo moderato (fitness = 180).}
 \end{figure}
 
 
@@ -303,27 +304,23 @@ Q_{\text{difesa}} = \sqrt{\frac{\text{VitaMedia}}{6}} \cdot (1 + 0.1 \cdot \text
 L’utilizzo della radice quadrata sulle variabili principali (\textit{DannoMedio} e \textit{VitaMedia}) consente di ridurre l’influenza delle feature con dominio numerico elevato, introducendo una normalizzazione non lineare che limita l’effetto di valori estremi e migliora la stabilità della funzione di fitness.
 
 \medskip
-Il dominio dei valori di \textit{DannoMedio} e \textit{VitaMedia} è significativamente differente, come mostrato nel Grafico~1. 
+Il dominio dei valori di \textit{DannoMedio} e \textit{VitaMedia} è significativamente differente, come mostrato nella \textit{Figura 3}. 
 Per garantire un bilanciamento equilibrato tra le due variabili, la variabile \textit{VitaMedia} viene normalizzata sostituendola con:
 
 \[
 \frac{\text{VitaMedia}}{6}
 \]
 
-
-\medskip
-{GRAFICO 1: Distribuzione dei valori di DannoMedio e VitaMedia}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{images/grafico1.png}
+\label{grafico1}
+\caption{Distribuzione dei valori di DannoMedio e VitaMedia}
 \end{figure}
-
-\par
-{GRAFICO 2: Distribuzione normalizzata dei valori di VitaMedia}
 
 \begin{figure}[H]
 \centering
+\caption{Distribuzione normalizzata dei valori di VitaMedia}
 \includegraphics[width=0.7\textwidth]{images/grafico2.png}
 \end{figure}
 
@@ -344,7 +341,7 @@ La componente offensiva è modellata tramite le seguenti variabili:
 La componente difensiva è modellata tramite le seguenti variabili:
 
 \begin{itemize}
-    \item \textit{VitaMedia}: rappresenta la quantità media di punti vita delle truppe nel deck ed è una misura della capacità di resistenza difensiva.
+    \item \textit{VitaMedia}: rappresenta la quantità media di punti vita delle truppe e degli edifici nel deck ed è una misura della capacità di resistenza difensiva.
     \item \textit{NumeroPortata}: indica il numero di carte in grado di colpire unità sia volanti che terrestri, modellando la capacità di controllo del campo di battaglia.
     \item \textit{EffettiAggiuntivi}: rappresenta un punteggio aggregato degli effetti speciali delle carte (ad esempio congelamento, rallentamento, generazione di truppe e danni ad area), che contribuiscono al controllo e alla gestione delle minacce avversarie.
 \end{itemize}
@@ -587,13 +584,101 @@ In questo approccio, un gene viene selezionato casualmente e sostituito con un�
 La probabilità di mutazione è fissata a 0.8
 La scelta di avere una probabilità di mutazione cosi alta consente di avere molta casualità, che per il dominio del problema è fondamentale 
 
+\section{Interfaccia Grafica}
 
+L’interfaccia grafica sviluppata ha lo scopo di facilitare l’interazione dell’utente con il progetto nel suo complesso.  
+Attraverso il menù principale è possibile selezionare il tipo di algoritmo da utilizzare, scegliendo tra Hill Climbing e Algoritmo Genetico, e configurarne i rispettivi parametri, permettendo così all’utente di personalizzare l’esecuzione dell’algoritmo.
 
+Inoltre, l’interfaccia consente di selezionare fino a quattro carte iniziali che il mazzo finale dovrà obbligatoriamente contenere, vincolando in questo modo il processo di generazione del deck.
 
+Nella schermata principale vengono mostrati i risultati finali dell’esecuzione, includendo la fitness ottenuta e le principali statistiche relative alle carte del mazzo generato, calcolate in base ai parametri selezionati dall’utente.  
+È inoltre presente una sezione dedicata allo storico delle esecuzioni, nella quale sono memorizzate tutte le generazioni prodotte dall’algoritmo, consentendo all’utente di consultarle in qualsiasi momento.
 
+\subsection{Configurazione per l’utente finale}
 
+Per eseguire correttamente l’applicazione e avviare l’interfaccia grafica, è necessario seguire i passaggi descritti di seguito, utilizzando il terminale dell’IDE (in questo caso PyCharm).
 
+\begin{enumerate}
+    \item \textbf{Installazione delle dipendenze} (sia su macOS che su Windows):
+    \begin{verbatim}
+    pip install -r requirements.txt
+    \end{verbatim}
 
+    \item \textbf{Inizializzazione dell’ambiente virtuale}:
+    
+    \textit{Su macOS}:
+    \begin{verbatim}
+    source .venv/bin/activate
+    \end{verbatim}
+
+    \textit{Su Windows}:
+    \begin{verbatim}
+    .venv\Scripts\activate
+    \end{verbatim}
+
+    \item \textbf{Avvio dell’interfaccia grafica}:
+    \begin{verbatim}
+    streamlit run DeckBuilderCR/GUI/guiClashRoyale.py
+    \end{verbatim}
+\end{enumerate}
+
+\section{Risultati e conclusione}
+
+I risultati presentati in questo capitolo sono stati ottenuti eseguendo sia l’algoritmo genetico sia l’algoritmo di Hill Climbing per un totale di 50 esecuzioni indipendenti ciascuno.  
+I parametri utilizzati per l’algoritmo genetico durante le fasi di test sono quelli descritti nel Capitolo~4.4.
+
+\subsection{Fitness media}
+
+L’analisi dei risultati mostra che l’algoritmo di Hill Climbing ottiene, in media, soluzioni con una fitness più elevata rispetto all’algoritmo genetico.  
+In particolare, il GA produce mazzi con una fitness media pari a 47{,}3, mentre l’Hill Climbing raggiunge una fitness media di 57{,}9.
+
+Questo risultato indica che, dal punto di vista puramente ottimizzativo, l’Hill Climbing tende a convergere verso soluzioni di qualità superiore. Tuttavia, tale comportamento deve essere valutato in relazione alle altre metriche considerate e agli obiettivi complessivi del problema.
+
+\subsection{Velocità di esecuzione}
+
+Per quanto riguarda le prestazioni temporali, l’algoritmo genetico risulta significativamente più rapido rispetto all’Hill Climbing.  
+Il tempo medio di esecuzione dell’Hill Climbing è pari a 4535 ms per singola esecuzione, mentre l’algoritmo genetico impiega in media soltanto 125 ms.
+
+Questo divario è dovuto alla natura iterativa e locale dell’Hill Climbing, che richiede numerosi passi di miglioramento successivo, a fronte di un GA che sfrutta operatori evolutivi in grado di esplorare lo spazio delle soluzioni in modo più efficiente dal punto di vista computazionale.
+
+\subsection{Varianza dei risultati}
+
+La varianza rappresenta una misura della dispersione dei risultati attorno al valore medio e fornisce indicazioni sulla stabilità e sulla diversità delle soluzioni generate.
+
+Formalmente, data una serie di valori di fitness ottenuti da $N$ esecuzioni indipendenti dell’algoritmo,
+\[
+f_1, f_2, \dots, f_N,
+\]
+la varianza è definita come:
+\[
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (f_i - \bar{f})^2
+\]
+dove $\bar{f}$ rappresenta la fitness media, calcolata come:
+\[
+\bar{f} = \frac{1}{N} \sum_{i=1}^{N} f_i.
+\]
+
+Nel nostro caso, l’algoritmo genetico presenta una varianza pari a 5{,}99, mentre l’Hill Climbing mostra una varianza prossima allo zero.  
+Sebbene una varianza bassa sia spesso considerata un indicatore positivo di stabilità, nel contesto specifico del problema tale comportamento risulta limitante.
+
+Una varianza prossima allo zero indica infatti che, indipendentemente dallo stato iniziale, l’Hill Climbing converge quasi sempre verso soluzioni molto simili tra loro, suggerendo una forte dipendenza dai massimi locali dello spazio degli stati.  
+Al contrario, la varianza osservata nel GA, pur rimanendo contenuta, è sufficientemente elevata da indicare la produzione di soluzioni diverse tra loro, caratteristica desiderabile nel problema in esame.
+
+\subsection{Conclusione}
+
+Sulla base delle analisi effettuate, la soluzione finale adottata è l’algoritmo genetico.  
+Come anticipato nel Capitolo~2, il GA risulta maggiormente coerente con gli obiettivi del problema, grazie alla sua maggiore flessibilità e alla capacità di esplorare in modo più efficace lo spazio degli stati.
+
+Sebbene l’Hill Climbing produca soluzioni mediamente più ottime in termini di fitness, esso soffre di una forte convergenza verso soluzioni simili, riducendo la varietà dei mazzi generati.  
+L’algoritmo genetico, invece, pur non garantendo sempre la soluzione ottima, è in grado di generare soluzioni costantemente buone e sufficientemente diverse tra loro, rendendolo più adatto al contesto applicativo considerato.
+
+\section{Disponibilità del codice sorgente}
+
+Il codice sorgente completo del progetto, comprensivo dell’implementazione degli algoritmi, dell’interfaccia grafica e dei file di configurazione, è disponibile pubblicamente al seguente indirizzo:
+
+\begin{center}
+\url{https://github.com/girgio/Deck-BuilderCR}
+\end{center}
 
 
 
