@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73a66eef-ae05-4b6f-bbda-6cdfa91499e0" name="Changes" comment="testing vari" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="HillClimbing-base" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQxTssM6-g-9v&quot;,
+        &quot;number&quot;: 1
+      },
+      &quot;lastSeen&quot;: 1769020082730
+    }
+  ]
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/girgio/Deck-BuilderCR.git&quot;,
+    &quot;accountId&quot;: &quot;ac26df4b-dbc5-47f8-91a4-7e31c3885a9b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="37z3wD4VsgRjWd0wB2qukLaXclC" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.CreaGrafico1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CreaGrafico2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HillClimbing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.guiClashRoyale.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testGA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testHC.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;branch__Giovanni&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giovanni/Documents/GitHub/Deck-BuilderCR/DeckBuilderCR/Dati&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;diff.base&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Giovanni\Documents\GitHub\Deck-BuilderCR\DeckBuilderCR\Dati" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Giovanni\Documents\GitHub\Deck-BuilderCR" />
+      <recent name="C:\Users\Giovanni\Documents\GitHub\Deck-BuilderCR\DeckBuilderCR\Dati" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73a66eef-ae05-4b6f-bbda-6cdfa91499e0" name="Changes" comment="" />
+      <created>1767892309196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767892309196</updated>
+      <workItem from="1767892310363" duration="46000" />
+      <workItem from="1767892481191" duration="235000" />
+      <workItem from="1767892764127" duration="1342000" />
+      <workItem from="1767901690540" duration="5573000" />
+      <workItem from="1767959447818" duration="7306000" />
+      <workItem from="1768129911730" duration="11919000" />
+      <workItem from="1768303855113" duration="1069000" />
+      <workItem from="1768391308243" duration="895000" />
+      <workItem from="1768474948426" duration="2516000" />
+      <workItem from="1768494218637" duration="107000" />
+      <workItem from="1768494345480" duration="252000" />
+      <workItem from="1768494626173" duration="5356000" />
+      <workItem from="1768733575865" duration="1110000" />
+      <workItem from="1768778314775" duration="13000" />
+      <workItem from="1768815996104" duration="18000" />
+      <workItem from="1768927269642" duration="10040000" />
+      <workItem from="1769018474412" duration="7974000" />
+      <workItem from="1769078245739" duration="95000" />
+      <workItem from="1769099980887" duration="1842000" />
+      <workItem from="1769111672971" duration="1539000" />
+      <workItem from="1769163290514" duration="5546000" />
+      <workItem from="1769333013828" duration="5649000" />
+      <workItem from="1769436996606" duration="9553000" />
+      <workItem from="1769454183712" duration="3601000" />
+      <workItem from="1769522278703" duration="6687000" />
+      <workItem from="1769545407067" duration="13207000" />
+      <workItem from="1769597602303" duration="645000" />
+      <workItem from="1769876842422" duration="3356000" />
+    </task>
+    <task id="LOCAL-00001" summary="modifiche varie">
+      <option name="closed" value="true" />
+      <created>1769024222110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769024222110</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Operatore di mutazione aggiunto e operatore di selezione completato">
+      <option name="closed" value="true" />
+      <created>1769169688339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769169688339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="testing vari">
+      <option name="closed" value="true" />
+      <created>1769562605684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769562605684</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/HillClimbing-base" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modifiche varie" />
+    <MESSAGE value="Operatore di mutazione aggiunto e operatore di selezione completato" />
+    <MESSAGE value="testing vari" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing vari" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Deck_BuilderCR$main.coverage" NAME="main Coverage Results" MODIFIED="1767959799439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR" />
+    <SUITE FILE_PATH="coverage/Carta_cpython_314_pyc$HillClimbing.coverage" NAME="HillClimbing Coverage Results" MODIFIED="1769447469143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/Algoritmi" />
+    <SUITE FILE_PATH="coverage/Carta_cpython_314_pyc$test.coverage" NAME="test Coverage Results" MODIFIED="1769547366428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR" />
+    <SUITE FILE_PATH="coverage/Deck_BuilderCR$CreaGrafico2.coverage" NAME="CreaGrafico2 Coverage Results" MODIFIED="1767959889092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/Grafici" />
+    <SUITE FILE_PATH="coverage/Deck_BuilderCR$test.coverage" NAME="test Coverage Results" MODIFIED="1768503404477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/Dati" />
+    <SUITE FILE_PATH="coverage/Carta_cpython_314_pyc$testGA.coverage" NAME="testGA Coverage Results" MODIFIED="1769876999880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/Test" />
+    <SUITE FILE_PATH="coverage/Deck_BuilderCR$CreaGrafico1.coverage" NAME="CreaGrafico1 Coverage Results" MODIFIED="1767959879338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/Grafici" />
+    <SUITE FILE_PATH="coverage/Carta_cpython_314_pyc$guiClashRoyale.coverage" NAME="guiClashRoyale Coverage Results" MODIFIED="1769561144364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/GUI" />
+    <SUITE FILE_PATH="coverage/Carta_cpython_314_pyc$testHC.coverage" NAME="testHC Coverage Results" MODIFIED="1769550395243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DeckBuilderCR/Test" />
+  </component>
+</project>
