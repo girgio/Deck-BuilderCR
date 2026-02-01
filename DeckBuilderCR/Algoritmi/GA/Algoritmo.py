@@ -43,7 +43,7 @@ def algoritmo_genetico(
     best_fitness = new_best_fitness - 1 #per far in modo che la condizione del while sia vera
     best_mazzo = None
 
-    while best_fitness <= new_best_fitness:
+    while best_fitness < new_best_fitness:
         i = 0
         best_mazzo = new_best_mazzo
         best_fitness = new_best_fitness

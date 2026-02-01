@@ -177,7 +177,7 @@ with tab1:
         st.sidebar.markdown("### 🏔️ Parametri HC")
 
         max_iter = st.sidebar.slider("Max Iterazioni", 50, 500, 200)
-        neighbors = st.sidebar.slider("Vicini per Iterazione", 10, 100, 60)
+        neighbors = st.sidebar.slider("Vicini per Iterazione", 10, 840, 840)
         max_stalli = st.sidebar.slider("Max Stalli", 10, 50, 30)
         usa_restart = st.sidebar.checkbox("Usa Random Restart", value=True)
 

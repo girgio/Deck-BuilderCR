@@ -1,497 +1,5 @@
 [
   {
-    "timestamp": "2026-01-28 00:23:24",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 36.66780661476845,
-    "mazzo": [
-      "Tronco",
-      "Razzo",
-      "Torre infernale",
-      "Megasgherro",
-      "Mongolfiera",
-      "Fenice",
-      "Strega",
-      "Goblin lancieri"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 00:24:15",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 65,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 43.32922680302407,
-    "mazzo": [
-      "Spirito della cura",
-      "Cucciolo di drago",
-      "Trivella goblin",
-      "Goblin",
-      "Clonazione",
-      "Gigante ",
-      "Stregone elletrico",
-      "Barile d'ossa"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 00:26:06",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 70,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 45.095096355742186,
-    "mazzo": [
-      "Barile d'ossa",
-      "Tornado",
-      "Draghi d'ossa",
-      "Golem di elisir",
-      "Terremoto",
-      "Goblin",
-      "Strega notturna",
-      "Torre infernale"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 00:39:37",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 70,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 44.119995638304374,
-    "mazzo": [
-      "Maledizione goblin",
-      "Scheletri",
-      "Sgherri",
-      "Razzo",
-      "Domatore di cinghiali",
-      "Barile d'ossa",
-      "Spirito del fuoco",
-      "Ariete da battaglia"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:06:42",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 70,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 43.479071697049804,
-    "mazzo": [
-      "Orda di sgherri",
-      "Spirito del fuoco",
-      "Cespuglio sospetto",
-      "Barile Barbarico",
-      "Tornado",
-      "Estrattore di elisir",
-      "Orda di scheletri",
-      "Maiali royale"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:06:51",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 80,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 42.704136531485915,
-    "mazzo": [
-      "Strega madre",
-      "Mortaio",
-      "Consegna royale",
-      "Pekka",
-      "Spaccamuro",
-      "Barile d'ossa",
-      "Goblin lancieri",
-      "Strega notturna"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:08",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 80,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 41.84189416970533,
-    "mazzo": [
-      "Tesla",
-      "Maledizione goblin",
-      "Cacciatore",
-      "Torre infernale",
-      "Macchina goblin",
-      "Maiali royale",
-      "Pipistrelli",
-      "Frecce"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:15",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 70,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 44.221041015788174,
-    "mazzo": [
-      "Guardie",
-      "Palla di neve gigante",
-      "Boscaiolo",
-      "Spaccamuro",
-      "Mongolfiera",
-      "Cannone",
-      "Cacciatore",
-      "Draghi d'ossa"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:21",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 90,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 45.70225469241866,
-    "mazzo": [
-      "Vuoto",
-      "Ariete da battaglia",
-      "Spirito della cura",
-      "Fuorilegge",
-      "Drago infernale",
-      "Maledizione goblin",
-      "Maiali royale",
-      "Trivella goblin"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:22",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 90,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 45.611463258302756,
-    "mazzo": [
-      "Arcieri",
-      "Capanna goblin",
-      "Scarica",
-      "Orda di scheletri",
-      "Barile d'ossa",
-      "Boscaiolo",
-      "Spaccamuro",
-      "Bombarolo"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:32",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 70,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 45.530062168723774,
-    "mazzo": [
-      "Sgherri",
-      "Principe nero",
-      "Scarica",
-      "Goblin demolitore",
-      "Stregone di ghiaccio",
-      "Torre infernale",
-      "Spaccamuro",
-      "Spirito del ghiaccio"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:41",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 60,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 45.24696305264693,
-    "mazzo": [
-      "Veleno",
-      "Palla di neve gigante",
-      "Fenice",
-      "Barile d'ossa",
-      "Torre infernale",
-      "Mongolfiera",
-      "Capanna goblin",
-      "Spirito del ghiaccio"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:48",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 100,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 43.90037512087059,
-    "mazzo": [
-      "Groviglio",
-      "Spirito del fuoco",
-      "Boscaiolo",
-      "Palla di neve gigante",
-      "Cannoe a rotelle",
-      "Arco x",
-      "Ariete da battaglia",
-      "Barile d'ossa"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:07:55",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 75,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 44.44477617428814,
-    "mazzo": [
-      "Fornace",
-      "Drago infernale",
-      "Golem di elisir",
-      "Consegna royale",
-      "Torre infernale",
-      "Cespuglio sospetto",
-      "Mascalzoni",
-      "Spirito del ghiaccio"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:08:04",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 75,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [
-      "Gigante"
-    ],
-    "fitness_finale": 47.141111300627884,
-    "mazzo": [
-      "Gigante ",
-      "Megasgherro",
-      "Cannone",
-      "Consegna royale",
-      "Pipistrelli",
-      "Scarica",
-      "Goblin lancieri",
-      "Maiali royale"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:08:27",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [
-      "Gigante"
-    ],
-    "fitness_finale": 42.055149211803325,
-    "mazzo": [
-      "Gigante",
-      "Groviglio",
-      "Megasgherro",
-      "Spaccamuro",
-      "Guardie",
-      "Orda di sgherri",
-      "Spirito della cura",
-      "Sgherri"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:09:14",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [
-      "Gigante",
-      "Berserker",
-      "Groviglio"
-    ],
-    "fitness_finale": 42.60953391885795,
-    "mazzo": [
-      "Groviglio",
-      "Berserker",
-      "Gigante",
-      "Goblin lancieri",
-      "Trivella goblin",
-      "Stregone",
-      "Barile d'ossa",
-      "Guardie"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:15:51",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 42.15132774924062,
-    "mazzo": [
-      "Goblin cerbottaniere",
-      "Strega madre",
-      "Scarica",
-      "Barile d'ossa",
-      "Cucciolo di drago",
-      "Goblin",
-      "Ariete da battaglia",
-      "Mini pekka"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:19:07",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 41.248931843526535,
-    "mazzo": [
-      "Spirito del ghiaccio",
-      "Goblin",
-      "Maiali royale",
-      "Fantasma royale",
-      "Maledizione goblin",
-      "Goblin lancieri",
-      "Mastino lavico",
-      "Megasgherro"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:20:18",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 30,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 40.91004934763239,
-    "mazzo": [
-      "Barile d'ossa",
-      "Barbari",
-      "Valchiria",
-      "Fantasma royale",
-      "Pipistrelli",
-      "Vuoto",
-      "Torre bombardiera",
-      "Spirito della cura"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:20:55",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 1000,
-      "mating_pool": 15,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 47.317315989494524,
-    "mazzo": [
-      "Scarica",
-      "Arco x",
-      "Goblin lancieri",
-      "Goblin",
-      "Barile d'ossa",
-      "Gigante",
-      "Fenice",
-      "Spirito elettrico"
-    ]
-  },
-  {
-    "timestamp": "2026-01-28 01:21:22",
-    "algoritmo": "GA",
-    "parametri": {
-      "popolazione": 1000,
-      "mating_pool": 345,
-      "mutazione": 0.5,
-      "crossover": 0.8
-    },
-    "carte_fisse": [],
-    "fitness_finale": 54.01694080617763,
-    "mazzo": [
-      "Frecce",
-      "Drago infernale",
-      "Goblin",
-      "Spirito del ghiaccio",
-      "Goblin cerbottaniere",
-      "Spaccamuro",
-      "Maiali royale",
-      "Torre infernale"
-    ]
-  },
-  {
     "timestamp": "2026-01-28 01:22:13",
     "algoritmo": "GA",
     "parametri": {
@@ -599,6 +107,1012 @@
       "Cucciolo di drago",
       "Mastino lavico",
       "Maledizione goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:39:07",
+    "algoritmo": "HC",
+    "parametri": {
+      "max_iter": 200,
+      "neighbors": 60,
+      "max_stalli": 30,
+      "restart": true
+    },
+    "carte_fisse": [],
+    "fitness_finale": 57.966205843692414,
+    "mazzo": [
+      "Razzo",
+      "Goblin lancieri",
+      "Maiali royale",
+      "Torre infernale",
+      "Spirito del fuoco",
+      "Pipistrelli",
+      "Spaccamuro",
+      "Furia"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:39:26",
+    "algoritmo": "HC",
+    "parametri": {
+      "max_iter": 200,
+      "neighbors": 60,
+      "max_stalli": 30,
+      "restart": true
+    },
+    "carte_fisse": [],
+    "fitness_finale": 57.966205843692414,
+    "mazzo": [
+      "Razzo",
+      "Spaccamuro",
+      "Goblin lancieri",
+      "Spirito del fuoco",
+      "Palla di neve gigante",
+      "Pipistrelli",
+      "Torre infernale",
+      "Maiali royale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:39:33",
+    "algoritmo": "HC",
+    "parametri": {
+      "max_iter": 200,
+      "neighbors": 60,
+      "max_stalli": 30,
+      "restart": true
+    },
+    "carte_fisse": [],
+    "fitness_finale": 57.966205843692414,
+    "mazzo": [
+      "Furia",
+      "Pipistrelli",
+      "Spirito del fuoco",
+      "Maiali royale",
+      "Razzo",
+      "Spaccamuro",
+      "Torre infernale",
+      "Goblin lancieri"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:39:38",
+    "algoritmo": "HC",
+    "parametri": {
+      "max_iter": 200,
+      "neighbors": 60,
+      "max_stalli": 30,
+      "restart": true
+    },
+    "carte_fisse": [],
+    "fitness_finale": 57.83046799683267,
+    "mazzo": [
+      "Goblin",
+      "Spaccamuro",
+      "Goblin lancieri",
+      "Maiali royale",
+      "Gang di goblin",
+      "Specchio",
+      "Pipistrelli",
+      "Torre infernale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:43:52",
+    "algoritmo": "HC",
+    "parametri": {
+      "max_iter": 199,
+      "neighbors": 840,
+      "max_stalli": 30,
+      "restart": true
+    },
+    "carte_fisse": [],
+    "fitness_finale": 57.966205843692414,
+    "mazzo": [
+      "Razzo",
+      "Spirito del fuoco",
+      "Spaccamuro",
+      "Torre infernale",
+      "Goblin lancieri",
+      "Pipistrelli",
+      "Palla di neve gigante",
+      "Maiali royale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:44:32",
+    "algoritmo": "HC",
+    "parametri": {
+      "max_iter": 199,
+      "neighbors": 840,
+      "max_stalli": 30,
+      "restart": true
+    },
+    "carte_fisse": [],
+    "fitness_finale": 57.966205843692414,
+    "mazzo": [
+      "Goblin lancieri",
+      "Palla di neve gigante",
+      "Spirito del fuoco",
+      "Spaccamuro",
+      "Torre infernale",
+      "Pipistrelli",
+      "Razzo",
+      "Maiali royale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:47:56",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 49.51227089945623,
+    "mazzo": [
+      "Barile d'ossa",
+      "Barbari elite",
+      "Gigantessa delle rune",
+      "Goblin lancieri",
+      "Tesla",
+      "Barile Barbarico",
+      "Pipistrelli",
+      "Goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:48:07",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 42.04526933943989,
+    "mazzo": [
+      "Goblin lancieri",
+      "Scarica",
+      "Arco x",
+      "Gigante",
+      "Cucciolo di drago",
+      "Drago infernale",
+      "Barile Barbarico",
+      "Gang di goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:48:27",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.29830062529092,
+    "mazzo": [
+      "Furia",
+      "Spirito del fuoco",
+      "Barile Barbarico",
+      "Spirito del ghiaccio",
+      "Spaccamuro",
+      "Tesla",
+      "Scariccucioli",
+      "Reclute royale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:48:40",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 43.270879835293634,
+    "mazzo": [
+      "Drago infernale",
+      "Gabbia per goblin",
+      "Gigante goblin",
+      "Palla di neve gigante",
+      "Goblin",
+      "Cannone",
+      "Maledizione goblin",
+      "Barile d'ossa"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:48:52",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 42.46891749855568,
+    "mazzo": [
+      "Draghi d'ossa",
+      "Cacciatore",
+      "Barile Barbarico",
+      "Maiali royale",
+      "Capanna goblin",
+      "Arciere pirotecnico",
+      "Spaccamuro",
+      "Stregone elettrico"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:48:57",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 44.65147299964856,
+    "mazzo": [
+      "Maledizione goblin",
+      "Gang di goblin",
+      "Spaccamuro",
+      "Spirito del fuoco",
+      "Domatrice di arieti",
+      "Mini pekka",
+      "Pipistrelli",
+      "Drago infernale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:49:02",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 60,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 44.75672890897337,
+    "mazzo": [
+      "Ariete da battaglia",
+      "Goblin lancieri",
+      "Tronco",
+      "Reclute royale",
+      "Spirito del ghiaccio",
+      "Draghi d'ossa",
+      "Orda di sgherri",
+      "Cannone"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:49:23",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 1000,
+      "mating_pool": 770,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.21663561709232,
+    "mazzo": [
+      "Golem di elisir",
+      "Fulmine",
+      "Tesla",
+      "Sgherri",
+      "Spaccamuro",
+      "Spirito del fuoco",
+      "Reclute royale",
+      "Cucciolo di drago"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:49:34",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 1000,
+      "mating_pool": 770,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.58580208687755,
+    "mazzo": [
+      "Spirito elettrico",
+      "Torre infernale",
+      "Goblin lancieri",
+      "Torre bombardiera",
+      "Maiali royale",
+      "Palla di neve gigante",
+      "Mongolfiera",
+      "Arciere magico"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:49:45",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 1000,
+      "mating_pool": 770,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.85813715958069,
+    "mazzo": [
+      "Barile d'ossa",
+      "Cannone",
+      "Spirito della cura",
+      "Spaccamuro",
+      "Reclute royale",
+      "Orda di scheletri",
+      "Arcieri",
+      "Veleno"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:49:58",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 1000,
+      "mating_pool": 770,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 46.97805650581239,
+    "mazzo": [
+      "Mongolfiera",
+      "Maiali royale",
+      "Pipistrelli",
+      "Spirito della cura",
+      "Tronco",
+      "Draghi d'ossa",
+      "Trivella goblin",
+      "Frecce"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:50:21",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 110,
+      "mating_pool": 90,
+      "mutazione": 0.8,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 42.859729849079415,
+    "mazzo": [
+      "Cucciolo di drago",
+      "Goblin cerbottaniere",
+      "Maiali royale",
+      "Spirito del fuoco",
+      "Groviglio",
+      "Golem di elisir",
+      "Goblin",
+      "Maledizione goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:50:28",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 110,
+      "mating_pool": 90,
+      "mutazione": 0.8,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.47474868373386,
+    "mazzo": [
+      "Gang di goblin",
+      "Spirito del fuoco",
+      "Cucciolo di drago",
+      "Spirito della cura",
+      "Reclute royale",
+      "Barile goblin",
+      "Torre infernale",
+      "Spaccamuro"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:00",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 35.745037197899414,
+    "mazzo": [
+      "Veleno",
+      "Vuoto",
+      "Drago infernale",
+      "Barile d'ossa",
+      "Scheletri",
+      "Trivella goblin",
+      "Macchina goblin",
+      "Mastino lavico"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:04",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 36.06699387564727,
+    "mazzo": [
+      "Imperatrice degli spiriti",
+      "Mini pekka",
+      "Clonazione",
+      "Berserker",
+      "Palla di neve gigante",
+      "Tesla",
+      "Principe",
+      "Spaccamuro"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:07",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 43.589176402763606,
+    "mazzo": [
+      "Fenice",
+      "Mascalzoni",
+      "Specchio",
+      "Torre infernale",
+      "Tronco",
+      "Goblin",
+      "Stregone di ghiaccio",
+      "Maiali royale"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:18",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 35.42001686985217,
+    "mazzo": [
+      "Minatore",
+      "Terremoto",
+      "Torre infernale",
+      "Cucciolo di drago",
+      "Palla di fuoco",
+      "Golem di elisir",
+      "Gran cavaliere",
+      "Mongolfiera"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:21",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 45.35763207496389,
+    "mazzo": [
+      "Palla di neve gigante",
+      "Torre bombardiera",
+      "Maledizione goblin",
+      "Boia",
+      "Ariete da battaglia",
+      "Maiali royale",
+      "Spirito elettrico",
+      "Scariccucioli"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:24",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 37.70824152308997,
+    "mazzo": [
+      "Palla di fuoco",
+      "Spirito della cura",
+      "Goblin demolitore",
+      "Gigante scheletro",
+      "Arciere magico",
+      "Sgherri",
+      "Lapide",
+      "Goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:26",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 40.704161266785356,
+    "mazzo": [
+      "Pekka",
+      "Scheletri",
+      "Pipistrelli",
+      "Furia",
+      "Tesla",
+      "Spirito elettrico",
+      "Goblin demolitore",
+      "Cacciatore"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:30",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 36.782604410982735,
+    "mazzo": [
+      "Fulmine",
+      "Mini pekka",
+      "Spirito del fuoco",
+      "Cavaliere",
+      "Arciere magico",
+      "Scariccucioli",
+      "Torre infernale",
+      "Scarica"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:33",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 35.93136947418622,
+    "mazzo": [
+      "Stregone elettrico",
+      "Vuoto",
+      "Estrattore di elisir",
+      "Ariete da battaglia",
+      "Terremoto",
+      "Drago infernale",
+      "Goblin",
+      "Arcieri"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:35",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 40.88509321882546,
+    "mazzo": [
+      "Spirito del fuoco",
+      "Moschettiere",
+      "Orda di sgherri",
+      "Spaccamuro",
+      "Frecce",
+      "Tronco",
+      "Barile d'ossa",
+      "Arciere pirotecnico"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:37",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 42.950934578912786,
+    "mazzo": [
+      "Spirito del fuoco",
+      "Tronco",
+      "Capanna goblin",
+      "Mastino lavico",
+      "Groviglio",
+      "Barile d'ossa",
+      "Goblin lancieri",
+      "Megasgherro"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:52:40",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 36.739766737648935,
+    "mazzo": [
+      "Spaccamuro",
+      "Frecce",
+      "Maiali royale",
+      "Gigante goblin",
+      "Capanna goblin",
+      "Boscaiolo",
+      "Mini pekka",
+      "Scariccucioli"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:53:36",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 42.74027488748847,
+    "mazzo": [
+      "Vuoto",
+      "Cannone",
+      "Tornado",
+      "Pipistrelli",
+      "Spirito del fuoco",
+      "Draghi d'ossa",
+      "Gigante royale",
+      "Gigante goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:53:38",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 30,
+      "mating_pool": 15,
+      "mutazione": 0.0,
+      "crossover": 0.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 36.233579656555634,
+    "mazzo": [
+      "Fornace",
+      "Golem di elisir",
+      "Gigantessa delle rune",
+      "Fenice",
+      "Tronco",
+      "Drago elettrico",
+      "Gang di goblin",
+      "Cacciatore"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:00",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 50,
+      "mating_pool": 25,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 44.77063599855889,
+    "mazzo": [
+      "Maiali royale",
+      "Furia",
+      "Palla di neve gigante",
+      "Orda di scheletri",
+      "Pipistrelli",
+      "Macchina goblin",
+      "Barile d'ossa",
+      "Spirito della cura"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:06",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 50,
+      "mating_pool": 25,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.555347323523264,
+    "mazzo": [
+      "Maiali royale",
+      "Golem di elisir",
+      "Macchina volante",
+      "Spirito elettrico",
+      "Orda di sgherri",
+      "Consegna royale",
+      "Torre infernale",
+      "Furia"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:13",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 50,
+      "mating_pool": 25,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 47.584787055752656,
+    "mazzo": [
+      "Gang di goblin",
+      "Boscaiolo",
+      "Torre infernale",
+      "Barbari elite",
+      "Frecce",
+      "Furia",
+      "Spirito della cura",
+      "Barile d'ossa"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:19",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 50.61704507805986,
+    "mazzo": [
+      "Maiali royale",
+      "Terremoto",
+      "Spaccamuro",
+      "Arcieri",
+      "Scariccucioli",
+      "Torre infernale",
+      "Furia",
+      "Gang di goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:28",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 48.58379532600323,
+    "mazzo": [
+      "Golem del ghiaccio",
+      "Palla di fuoco",
+      "Razzo",
+      "Pipistrelli",
+      "Cucciolo di drago",
+      "Spaccamuro",
+      "Torre infernale",
+      "Spirito elettrico"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:33",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 48.32030096054808,
+    "mazzo": [
+      "Maiali royale",
+      "Mongolfiera",
+      "Gang di goblin",
+      "Scarica",
+      "Torre infernale",
+      "Spirito del fuoco",
+      "Minatore",
+      "Groviglio"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:54:37",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 49.109559673910134,
+    "mazzo": [
+      "Gigante",
+      "Pipistrelli",
+      "Cespuglio sospetto",
+      "Guardie",
+      "Palla di fuoco",
+      "Torre infernale",
+      "Goblin lancieri",
+      "Goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:55:05",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [
+      "Tre moschettieri"
+    ],
+    "fitness_finale": 48.638288035691936,
+    "mazzo": [
+      "Tre moschettieri",
+      "Barile d'ossa",
+      "Spirito elettrico",
+      "Ariete da battaglia",
+      "Spirito del fuoco",
+      "Gang di goblin",
+      "Cannone",
+      "Furia"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:55:26",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [
+      "Tre moschettieri"
+    ],
+    "fitness_finale": 48.370118466751606,
+    "mazzo": [
+      "Tre moschettieri",
+      "Tornado",
+      "Spaccamuro",
+      "Barile d'ossa",
+      "Tesla",
+      "Maledizione goblin",
+      "Goblin lancieri",
+      "Gang di goblin"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:55:40",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [
+      "Tre moschettieri"
+    ],
+    "fitness_finale": 44.25034779238361,
+    "mazzo": [
+      "Tre moschettieri",
+      "Torre infernale",
+      "Gang di goblin",
+      "Sgherri",
+      "Cucciolo di drago",
+      "Spaccamuro",
+      "Palla di fuoco",
+      "Barile d'ossa"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:55:57",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [
+      "Tre moschettieri",
+      "Gigante goblin",
+      "Golem",
+      "Mastino lavico"
+    ],
+    "fitness_finale": 23.885057210564142,
+    "mazzo": [
+      "Golem",
+      "Mastino lavico",
+      "Tre moschettieri",
+      "Gigante goblin",
+      "Cannone",
+      "Goblin lancieri",
+      "Spirito del fuoco",
+      "Tornado"
+    ]
+  },
+  {
+    "timestamp": "2026-01-31 17:56:05",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 380,
+      "mating_pool": 205,
+      "mutazione": 1.0,
+      "crossover": 1.0
+    },
+    "carte_fisse": [
+      "Tre moschettieri",
+      "Gigante goblin",
+      "Golem",
+      "Mastino lavico"
+    ],
+    "fitness_finale": 26.28092579662136,
+    "mazzo": [
+      "Gigante goblin",
+      "Tre moschettieri",
+      "Mastino lavico",
+      "Golem",
+      "Goblin lancieri",
+      "Spirito della cura",
+      "Tronco",
+      "Spirito del ghiaccio"
     ]
   }
 ]
