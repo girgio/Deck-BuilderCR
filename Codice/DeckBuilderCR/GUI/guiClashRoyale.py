@@ -168,10 +168,10 @@ with tab1:
     if "Genetic" in algoritmo:
         st.sidebar.markdown("### 🧬 Parametri GA")
 
-        size_pop = st.sidebar.slider("Dimensione Popolazione", 0, 1000, 30, 10)
-        size_mating = st.sidebar.slider("Dimensione Mating Pool", 0, 1000, 15, 5)
-        p_mutation = st.sidebar.slider("Prob. Mutazione", 0.0, 1.0, 0.5, 0.05)
-        p_crossover = st.sidebar.slider("Prob. Crossover", 0.0, 1.0, 0.8, 0.05)
+        size_pop = st.sidebar.slider("Dimensione Popolazione", 0, 1000, 100, 10)
+        size_mating = st.sidebar.slider("Dimensione Mating Pool", 0, 1000, 80, 5)
+        p_mutation = st.sidebar.slider("Prob. Mutazione", 0.0, 1.0, 0.8, 0.05)
+        p_crossover = st.sidebar.slider("Prob. Crossover", 0.0, 1.0, 1.0, 0.05)
 
     else:  # Hill Climbing
         st.sidebar.markdown("### 🏔️ Parametri HC")

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73a66eef-ae05-4b6f-bbda-6cdfa91499e0" name="Changes" comment="testing vari" />
+    <list default="true" id="73a66eef-ae05-4b6f-bbda-6cdfa91499e0" name="Changes" comment="testing vari">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codice/DeckBuilderCR/GUI/guiClashRoyale.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codice/DeckBuilderCR/GUI/guiClashRoyale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codice/DeckBuilderCR/GUI/storico.json" beforeDir="false" afterPath="$PROJECT_DIR$/Codice/DeckBuilderCR/GUI/storico.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +83,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;branch__Giovanni&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Giovanni/Documents/GitHub/Deck-BuilderCR/DeckBuilderCR/Dati&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,

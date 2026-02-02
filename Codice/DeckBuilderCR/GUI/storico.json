@@ -1,49 +1,5 @@
 [
   {
-    "timestamp": "2026-01-31 17:39:26",
-    "algoritmo": "HC",
-    "parametri": {
-      "max_iter": 200,
-      "neighbors": 60,
-      "max_stalli": 30,
-      "restart": true
-    },
-    "carte_fisse": [],
-    "fitness_finale": 57.966205843692414,
-    "mazzo": [
-      "Razzo",
-      "Spaccamuro",
-      "Goblin lancieri",
-      "Spirito del fuoco",
-      "Palla di neve gigante",
-      "Pipistrelli",
-      "Torre infernale",
-      "Maiali royale"
-    ]
-  },
-  {
-    "timestamp": "2026-01-31 17:39:33",
-    "algoritmo": "HC",
-    "parametri": {
-      "max_iter": 200,
-      "neighbors": 60,
-      "max_stalli": 30,
-      "restart": true
-    },
-    "carte_fisse": [],
-    "fitness_finale": 57.966205843692414,
-    "mazzo": [
-      "Furia",
-      "Pipistrelli",
-      "Spirito del fuoco",
-      "Maiali royale",
-      "Razzo",
-      "Spaccamuro",
-      "Torre infernale",
-      "Goblin lancieri"
-    ]
-  },
-  {
     "timestamp": "2026-01-31 17:39:38",
     "algoritmo": "HC",
     "parametri": {
@@ -1113,6 +1069,50 @@
       "Ariete da battaglia",
       "Veleno",
       "Draghi d'ossa"
+    ]
+  },
+  {
+    "timestamp": "2026-02-02 14:08:00",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 80,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 43.388681999491226,
+    "mazzo": [
+      "Tornado",
+      "Goblin lancieri",
+      "Stregone elettrico",
+      "Palla di neve gigante",
+      "Mongolfiera",
+      "Barile d'ossa",
+      "Torre bombardiera",
+      "Boscaiolo"
+    ]
+  },
+  {
+    "timestamp": "2026-02-02 14:08:10",
+    "algoritmo": "GA",
+    "parametri": {
+      "popolazione": 100,
+      "mating_pool": 80,
+      "mutazione": 0.8,
+      "crossover": 1.0
+    },
+    "carte_fisse": [],
+    "fitness_finale": 40.78943307452422,
+    "mazzo": [
+      "Golem di elisir",
+      "Draghi d'ossa",
+      "Furia",
+      "Torre infernale",
+      "Berserker",
+      "Goblin",
+      "Strega madre",
+      "Clonazione"
     ]
   }
 ]
